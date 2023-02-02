@@ -9,8 +9,8 @@ function Header() {
         <nav>
             <HeaderUlTheme id='Header-ul'>
                 <li><a id='about-a' href='/'>About</a></li>
-                <li><a href='#mainProyectos'>Proyectos</a></li>
-                <li><a href='/'>Contacto</a></li>
+                <li><a href='#Proyectos'>Proyectos</a></li>
+                <li><a href='#Contacto'>Contacto</a></li>
             </HeaderUlTheme>
         </nav>
       </HeaderTheme>

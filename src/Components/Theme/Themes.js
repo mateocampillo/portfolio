@@ -6,7 +6,8 @@ const LightTheme = {
     color1: "#4996c9",
     color2: "#FF0063",
     bgcAbout: "#975C8D",
-    cerrarAbout: "#fff"
+    cerrarAbout: "#fff",
+    bgcLinkedinIcon: ""
 };
 
 const DarkTheme = {
@@ -17,7 +18,8 @@ const DarkTheme = {
     color1: "#64FFC7",
     color2: "#EF4625",
     bgcAbout: "#D6634C",
-    cerrarAbout: "#fff"
+    cerrarAbout: "#fff",
+    bgcLinkedinIcon: "#fff"
 };
 
 const Themes = {

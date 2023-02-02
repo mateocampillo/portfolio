@@ -6,7 +6,7 @@ import {
 
 function MainProyectos() {
     return (
-        <MainProyectosContainerTheme id='mainProyectos'>
+        <MainProyectosContainerTheme id='Proyectos'>
             <MainProyectosWrapperTheme>
                 <div>
                     <h2>Proyectos</h2>

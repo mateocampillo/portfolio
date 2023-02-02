@@ -187,7 +187,7 @@ export const SwitchModeContainer = styled.div`
     position: sticky;
     width: 60px;
     text-align: center;
-    bottom: 5%;
+    bottom: 10%;
     left: 80%;
 `;
 
@@ -247,3 +247,78 @@ export const ProyectoWrapperTheme = styled.div`
 `;
 
 //FIN MAIN PROYECTOS SECTION
+// CONTACTO SECTION
+
+export const ContactoContainerTheme = styled.div`
+    transition: all 200ms ease-in;
+    height: 65vh;
+    background-color: ${({theme}) => theme.bgc};
+    width: 80%;
+    margin: 0px auto;
+`;
+
+export const ContactoWrapperTheme = styled.div`
+    display: flex;
+    flex-direction: column;
+    h2{
+        color: ${({theme}) => theme.color1};
+        margin: 5px auto;
+    }
+    h3{
+        text-align: left;
+        color: ${({theme}) => theme.color1};
+    }
+`;
+
+export const ContactoDivInsideTheme = styled.div`
+    text-align: center;
+    margin: 20px auto;
+
+    label{
+        display: block;
+        margin: 10px auto;
+        text-align: center;
+        color: ${({theme}) => theme.text};
+        font-weight: 600;
+    }
+    input{
+        font-size: 1.1rem;
+    }
+    textarea{
+        width: 100%;
+        font-size: 1rem;
+    }
+    button{
+        color: ${({theme}) => theme.color1};
+        background-color: ${({theme}) => theme.bgc};
+        padding: 5px;
+        font-size: 1.3rem;
+        font-weight: 600;
+        border: 1px solid ${({theme}) => theme.text};
+        border-radius: 3px;
+    }
+
+`;
+
+export const ContactoIconoLinkedin = styled.a`
+    text-decoration: none;
+    margin-top: 5px;
+    text-align: center;
+    color: ${({theme}) => theme.bgcLinkedinIcon};
+    i{
+        font-size: 2rem;
+    }
+`;
+
+//FIN CONTACTO SECTION
+//FOOTER SECTION
+
+export const FooterContainerTheme = styled.footer`
+    transition: all 200ms ease-in;
+    height: 30vh;
+    background-color: ${({theme}) => theme.bgc};
+    width: 80%;
+    margin: 0px auto;
+`;
+
+//FIN FOOTER SECTION

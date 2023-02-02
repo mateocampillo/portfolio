@@ -7,7 +7,7 @@ import SwitchMode from './Components/Switch/SwitchMode';
 
 function App() {
 
-  const [theme, setTheme] = useState('dark');
+  const [theme, setTheme] = useState('light');
 
   return (
       <ThemeProvider theme={Themes[theme]}>
