@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
 import './App.css';
+import { Cover, Themes } from './Components';
+import { ThemeProvider } from 'styled-components';
+import { BodyTheme } from './Components/Cover/Cover.elements';
+import SwitchMode from './Components/MainContainer/SwitchMode';
 
 function App() {
+
+  const [theme, setTheme] = useState('dark');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ThemeProvider theme={Themes[theme]}>
+        <BodyTheme className="App">
+          <Cover />
+          <SwitchMode theme ={theme} setTheme={setTheme} />
+        </BodyTheme>
+      </ThemeProvider>
   );
 }
 
