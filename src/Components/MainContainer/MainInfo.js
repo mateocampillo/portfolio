@@ -15,7 +15,7 @@ function MainInfo() {
         </MainInfoIntroTheme>
         <MainInfoDescTheme id='mainInfo-desc'>
           <p>Apasionado por la creacion, el diseño y el progreso.</p>
-          <div><i class="fa-solid fa-location-dot"></i><h4>Argentina, Buenos Aires</h4></div>
+          <div><i class="fa-solid fa-location-dot"></i><h4>Buenos Aires, Argentina</h4></div>
           <button id="mainInfo-button">About me</button>
         </MainInfoDescTheme>
         <MainInfoIconsTheme id='mainInfo-icons'>

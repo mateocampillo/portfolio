@@ -3,7 +3,7 @@ import './App.css';
 import { Cover, Themes } from './Components';
 import { ThemeProvider } from 'styled-components';
 import { BodyTheme } from './Components/Cover/Cover.elements';
-import SwitchMode from './Components/MainContainer/SwitchMode';
+import SwitchMode from './Components/Switch/SwitchMode';
 
 function App() {
 

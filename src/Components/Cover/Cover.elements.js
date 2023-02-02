@@ -2,10 +2,20 @@ import styled from 'styled-components';
 
 export const BodyTheme = styled.div`
     background-color: ${({theme}) => theme.bgc};
-    height: 100vh;
+    height: 100%;
     transition: 200ms all ease-in;
+    position: relative;
 `;
 
+export const HrTheme = styled.hr`
+    background-color: ${({theme}) => theme.bgc};
+	border-top: 2px dashed ${({theme}) => theme.text};
+    border-bottom: none;
+    width: 80%;
+    margin: 10px auto;
+`;
+
+// HEADER SECTION
 export const HeaderTheme = styled.header`
     padding-top: 1px;
 `;
@@ -43,6 +53,9 @@ export const HeaderUlTheme = styled.ul`
     }
 
 `;
+
+// FIN HEADER SECTION
+// MAIN CONTAINER SECTION
 
 export const SectionAboutTheme = styled.div`
   color: #fff;
@@ -137,6 +150,7 @@ export const MainInfoDescTheme = styled.div`
         font-weight: 700;
         margin-top: 30px;
         border-bottom: 1px solid ${({theme}) => theme.color2};
+        transition: all 200ms ease-in;
     }
 `;
 
@@ -159,18 +173,22 @@ export const MainInfoIconsTheme = styled.div`
         font-size: 1rem;
         vertical-align: center;
         color: ${({theme}) => theme.text};
+        transition: all 200ms ease-in;
     }
     svg{
         font-size: 1.7rem;
     }
 `;
 
+// FIN MAIN CONTAINER SECTION
+// SWITCHMODE SECTION
+
 export const SwitchModeContainer = styled.div`
-    position: absolute;
+    position: sticky;
     width: 60px;
     text-align: center;
     bottom: 5%;
-    right: 5%;
+    left: 80%;
 `;
 
 export const SwitchModeButton = styled.button`
@@ -184,3 +202,48 @@ export const SwitchModeButton = styled.button`
         fill: ${({theme}) => theme.text};
     }
 `;
+
+// FIN SWITCHMODE SECTION
+// MAIN PROYECTOS SECTION
+
+export const MainProyectosContainerTheme = styled.div`
+    transition: all 200ms ease-in;
+    height: 100vh;
+    background-color: ${({theme}) => theme.bgc};
+`;
+
+export const MainProyectosWrapperTheme = styled.div`
+    margin: 0 15px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+    h2{
+        text-align: center;
+        font-size: 2rem;
+        color: ${({theme}) => theme.color2};
+    }
+`;
+
+export const MainProyectoImageTheme = styled.img`
+    width: 90%;
+    border: 1px solid ${({theme}) => theme.text};
+    border-radius: 3px;
+`; 
+
+export const ProyectoWrapperTheme = styled.div`
+    text-align: center;
+    color: ${({theme}) => theme.text};
+
+    h3{
+        margin: 5px auto;
+    }
+    a{
+        color: ${({theme}) => theme.text};
+        text-decoration: underline 1px solid ${({theme}) => theme.color2};
+    }
+`;
+
+//FIN MAIN PROYECTOS SECTION
