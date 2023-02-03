@@ -6,7 +6,7 @@ import {
 function Footer() {
     return (
         <FooterContainerTheme>
-
+            <h2>Diseño y desarrollo por Mateo Campillo</h2>
         </FooterContainerTheme>
     )
 }

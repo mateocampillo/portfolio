@@ -3,7 +3,8 @@ import {
     ContactoContainerTheme,
     ContactoWrapperTheme,
     ContactoDivInsideTheme,
-    ContactoIconoLinkedin
+    ContactoIconoLinkedin,
+    ContactoH3IconoLinkedin
 } from '../Cover/Cover.elements';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -54,8 +55,7 @@ function Contacto() {
                         <button id='buttonSubmitContacto' type='submit' value="Send" >Enviar</button>
                     </ContactoDivInsideTheme>
                 </form>
-                <h3>O podemos conectar en Linkedin!</h3>
-                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><i class="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
+                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>O podemos conectar en Linkedin!</ContactoH3IconoLinkedin><i class="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
             </ContactoWrapperTheme>
         </ContactoContainerTheme>
     )

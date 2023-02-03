@@ -7,7 +7,7 @@ const LightTheme = {
     color2: "#FF0063",
     bgcAbout: "#975C8D",
     cerrarAbout: "#fff",
-    bgcLinkedinIcon: ""
+    bgcLinkedinIcon: "#0072B1"
 };
 
 const DarkTheme = {

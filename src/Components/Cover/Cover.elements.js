@@ -81,9 +81,17 @@ export const SectionAboutTheme = styled.div`
   }
 `;
 
+export const SectionAboutImageDivTheme = styled.div`
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+`; 
+
 export const SectionAboutImageTheme = styled.img`
     width: 70%;
-    margin-left: 10px;
+    @media (min-width: 381px) {
+        width: 50%;
+    }
 `; 
 
 export const SectionAboutStackTheme = styled.div`
@@ -113,6 +121,10 @@ export const MainInfoIntroTheme = styled.div`
         font-size: 2.4rem;
         font-weight: 100;
         text-align: center;
+        @media (min-width: 381px) {
+            font-size: 2.8rem;
+            margin-top: 15px;
+        }
     }
     h2{
         padding-top: 45px;
@@ -129,6 +141,9 @@ export const MainInfoDescTheme = styled.div`
     p{
         font-size: 1.1rem;
         padding-bottom: 20px;
+        @media (min-width: 381px) {
+            font-size: 1.4rem;
+        }
     }
     h4, i{
         display: inline;
@@ -136,11 +151,17 @@ export const MainInfoDescTheme = styled.div`
     svg{
         font-size: 1.5rem;
         padding-right: 10px;
+        @media (min-width: 381px) {
+            font-size: 1.7rem;
+        }
     }
     h4{
         font-size: 1.2rem;
         font-weight: 300;
         padding-left: 10px;
+        @media (min-width: 381px) {
+            font-size: 1.4rem;
+        }
     }
     button{
         background-color: ${({theme}) => theme.bgc};
@@ -162,6 +183,9 @@ export const MainInfoIconsTheme = styled.div`
 
     i{
         font-size: 2rem;
+        @media (min-width: 381px) {
+            font-size: 2.5rem;
+        }
     }
     a{
         text-decoration: none;
@@ -174,9 +198,15 @@ export const MainInfoIconsTheme = styled.div`
         vertical-align: center;
         color: ${({theme}) => theme.text};
         transition: all 200ms ease-in;
+        @media (min-width: 381px) {
+            font-size: 1.3rem;
+        }
     }
     svg{
         font-size: 1.7rem;
+        @media (min-width: 381px) {
+            font-size: 2.3rem;
+        }
     }
 `;
 
@@ -189,6 +219,10 @@ export const SwitchModeContainer = styled.div`
     text-align: center;
     bottom: 10%;
     left: 80%;
+    @media (min-width: 381px) {
+        bottom: 5%;
+        left: 88%;
+    }
 `;
 
 export const SwitchModeButton = styled.button`
@@ -231,11 +265,17 @@ export const MainProyectoImageTheme = styled.img`
     width: 90%;
     border: 1px solid ${({theme}) => theme.text};
     border-radius: 3px;
+    @media (min-width: 381px) {
+        width: 50%;
+    }
 `; 
 
 export const ProyectoWrapperTheme = styled.div`
     text-align: center;
     color: ${({theme}) => theme.text};
+    @media (min-width: 381px) {
+        margin: 10px auto;
+    }
 
     h3{
         margin: 5px auto;
@@ -251,7 +291,7 @@ export const ProyectoWrapperTheme = styled.div`
 
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 65vh;
+    height: 70vh;
     background-color: ${({theme}) => theme.bgc};
     width: 80%;
     margin: 0px auto;
@@ -263,6 +303,9 @@ export const ContactoWrapperTheme = styled.div`
     h2{
         color: ${({theme}) => theme.color1};
         margin: 5px auto;
+        @media (min-width: 381px) {
+            font-size: 2rem;
+        }
     }
     h3{
         text-align: left;
@@ -280,13 +323,21 @@ export const ContactoDivInsideTheme = styled.div`
         text-align: center;
         color: ${({theme}) => theme.text};
         font-weight: 600;
+        @media (min-width: 381px) {
+            font-size: 1.1rem;
+        }
     }
     input{
         font-size: 1.1rem;
+        padding: 5px;
+        @media (min-width: 381px) {
+            width: 50%;
+        }
     }
     textarea{
         width: 100%;
         font-size: 1rem;
+        padding: 4px;
     }
     button{
         color: ${({theme}) => theme.color1};
@@ -300,6 +351,12 @@ export const ContactoDivInsideTheme = styled.div`
 
 `;
 
+export const ContactoH3IconoLinkedin = styled.h3`
+    @media (min-width: 381px) {
+        display: inline;
+    }
+`;
+
 export const ContactoIconoLinkedin = styled.a`
     text-decoration: none;
     margin-top: 5px;
@@ -307,6 +364,10 @@ export const ContactoIconoLinkedin = styled.a`
     color: ${({theme}) => theme.bgcLinkedinIcon};
     i{
         font-size: 2rem;
+        @media (min-width: 381px) {
+            display: inline;
+            margin-left: 10px;
+        }
     }
 `;
 
@@ -315,10 +376,15 @@ export const ContactoIconoLinkedin = styled.a`
 
 export const FooterContainerTheme = styled.footer`
     transition: all 200ms ease-in;
-    height: 30vh;
     background-color: ${({theme}) => theme.bgc};
     width: 80%;
     margin: 0px auto;
+
+    h2{
+        margin: 15px 0 0;
+        font-size: 1rem;
+        color: ${({theme}) => theme.text};
+    }
 `;
 
 //FIN FOOTER SECTION
