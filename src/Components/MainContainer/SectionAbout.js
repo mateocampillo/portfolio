@@ -2,7 +2,8 @@ import {
   SectionAboutTheme,
   SectionAboutImageTheme,
   SectionAboutStackTheme,
-  SectionAboutImageDivTheme
+  SectionAboutImageDivTheme,
+  SectionAboutTextoTheme
 } from '../Cover/Cover.elements';
 
 function SectionAbout() {
@@ -10,7 +11,7 @@ function SectionAbout() {
       <SectionAboutTheme id='sectionAbout'>
         <svg id='cerrarAbout' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"/></svg>
         <SectionAboutImageDivTheme><SectionAboutImageTheme alt='foto-mateo-campillo' src="/img/foto mia cv rectangulo.jpg"/></SectionAboutImageDivTheme>
-        <div>
+        <SectionAboutTextoTheme>
           <div><p>Buenas! mi nombre es Mateo Campillo, web developer.</p></div>
           <div><p>Desde pequeño sabia que mi carrera se iba a desarrollador de forma electrónica, y cuando descubrí el web development me enamore por completo. Siento que me permite crecer constatemente y explotar mi creatividad.</p></div>
           <div><p>Stack MERN y algunas tecnologías más:</p></div>
@@ -23,8 +24,8 @@ function SectionAbout() {
             <i class="devicon-bootstrap-plain colored"></i>
             <i class="devicon-html5-plain"></i>
             <i class="devicon-css3-plain colored"></i>
-        </SectionAboutStackTheme>
-        </div>
+          </SectionAboutStackTheme>
+        </SectionAboutTextoTheme>
       </SectionAboutTheme>
     );
   }

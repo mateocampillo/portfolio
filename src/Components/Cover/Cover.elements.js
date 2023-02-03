@@ -5,6 +5,9 @@ export const BodyTheme = styled.div`
     height: 100%;
     transition: 200ms all ease-in;
     position: relative;
+    @media (min-width: 1201px){
+        padding: 0px 100px;
+    }
 `;
 
 export const HrTheme = styled.hr`
@@ -13,6 +16,9 @@ export const HrTheme = styled.hr`
     border-bottom: none;
     width: 80%;
     margin: 10px auto;
+    @media (min-width: 1201px){
+        border-top: 3px dashed ${({theme}) => theme.text};;
+    }
 `;
 
 // HEADER SECTION
@@ -28,6 +34,11 @@ export const HeaderUlTheme = styled.ul`
     font-size: 1.4rem;
     list-style-type: none;
     font-family: 'Work Sans', sans-serif;
+    @media (min-width: 1201px){
+        margin: 20px auto 0px;
+        font-size: 2rem;
+        font-weight: 600;
+    }
 
     li {
         a{
@@ -37,6 +48,10 @@ export const HeaderUlTheme = styled.ul`
             padding: 3px;
             border-left: ${({theme}) => theme.color1} 2px solid;
             border-bottom: ${({theme}) => theme.color1} 2px solid;
+            @media (min-width: 1201px){
+                border-left: ${({theme}) => theme.color1} 3px solid;
+                border-bottom: ${({theme}) => theme.color1} 3px solid;
+            }
             a{
                 color: ${({theme}) => theme.color1};
             }
@@ -45,6 +60,10 @@ export const HeaderUlTheme = styled.ul`
             padding: 3px;
             border-left: ${({theme}) => theme.color2} 2px solid;
             border-bottom: ${({theme}) => theme.color2} 2px solid;
+            @media (min-width: 1201px){
+                border-left: ${({theme}) => theme.color2} 3px solid;
+                border-bottom: ${({theme}) => theme.color2} 3px solid;
+            }
             a{
                 color: ${({theme}) => theme.color2};
             }
@@ -84,9 +103,21 @@ export const SectionAboutTheme = styled.div`
     position: absolute;
     right: 17px;
     top: 5px;
-    fill: ${({theme}) => theme.cerrarAbout}
+    fill: ${({theme}) => theme.cerrarAbout};
+    cursor: pointer;
   }
 `;
+
+export const SectionAboutTextoTheme = styled.div`
+    div{
+        margin: 4px auto;
+    }
+    p{
+        @media (min-width: 1201px){
+            font-size: 1.3rem;
+        }
+    }
+`; 
 
 export const SectionAboutImageDivTheme = styled.div`
     display: flex;
@@ -94,7 +125,13 @@ export const SectionAboutImageDivTheme = styled.div`
     justify-content: center;
     @media (min-width: 769px) {
         margin: 30px 30px;
-        width: 65%;
+        width: 100%;
+    }
+    @media (min-width: 1201px){
+        width: 40%;
+    }
+    @media (min-width: 1600px){
+        width: 25%;
     }
 `; 
 
@@ -117,6 +154,9 @@ export const SectionAboutStackTheme = styled.div`
     i{
         font-size: 2.5rem;
         padding: 10px 15px;
+        @media (min-width: 1201px){
+            font-size: 4rem;
+        }
     }
 `;
 
@@ -132,6 +172,10 @@ export const MainInfoTheme = styled.div`
         flex-direction: row;
         padding: 0 50px;
     }
+    @media (min-width: 1201px){
+        height: 40vh;
+        padding: 0px 100px;
+    }
 `;
 
 export const MainInfoIntroTheme = styled.div`
@@ -143,6 +187,10 @@ export const MainInfoIntroTheme = styled.div`
         @media (min-width: 381px) {
             font-size: 2.8rem;
             margin-top: 15px;
+        }
+        @media (min-width: 1201px){
+            font-size: 3rem;
+            font-weight: 400;
         }
     }
     h2{
@@ -167,6 +215,9 @@ export const MainInfoDescTheme = styled.div`
         @media (min-width: 381px) {
             font-size: 1.4rem;
         }
+        @media (min-width: 1201px) {
+            font-size: 1.6rem;
+        }
     }
     h4, i{
         display: inline;
@@ -177,6 +228,9 @@ export const MainInfoDescTheme = styled.div`
         @media (min-width: 381px) {
             font-size: 1.7rem;
         }
+        @media (min-width: 1201px) {
+            font-size: 1.9rem;
+        }
     }
     h4{
         font-size: 1.2rem;
@@ -184,6 +238,9 @@ export const MainInfoDescTheme = styled.div`
         padding-left: 10px;
         @media (min-width: 381px) {
             font-size: 1.4rem;
+        }
+        @media (min-width: 1201px) {
+            font-size: 1.6rem;
         }
     }
     button{
@@ -195,6 +252,7 @@ export const MainInfoDescTheme = styled.div`
         margin-top: 30px;
         border-bottom: 1px solid ${({theme}) => theme.color2};
         transition: all 200ms ease-in;
+        cursor: pointer;
         @media (min-width: 769px) {
             font-size: 1.5rem;
         }
@@ -217,6 +275,9 @@ export const MainInfoIconsTheme = styled.div`
         @media (min-width: 381px) {
             font-size: 2.5rem;
         }
+        @media (min-width: 1201px) {
+            font-size: 3rem;
+        }
     }
     a{
         text-decoration: none;
@@ -228,12 +289,13 @@ export const MainInfoIconsTheme = styled.div`
     button{
         background-color: ${({theme}) => theme.bgc};
         border: none;
+        cursor: pointer;
         font-size: 1rem;
         vertical-align: center;
         color: ${({theme}) => theme.text};
         transition: all 200ms ease-in;
-        @media (min-width: 381px) {
-            font-size: 1.3rem;
+        @media (min-width: 1201px) {
+            font-size: 1.7rem;
         }
     }
     svg{
@@ -257,6 +319,9 @@ export const SwitchModeContainer = styled.div`
         bottom: 5%;
         left: 88%;
     }
+    @media (min-width: 1201px) {
+        left: 95%;
+    }
 `;
 
 export const SwitchModeButton = styled.button`
@@ -264,10 +329,14 @@ export const SwitchModeButton = styled.button`
     border: 1px solid ${({theme}) => theme.text};
     border-radius: 3px;
     background-color: ${({theme}) => theme.bgc};
+    cursor: pointer;
 
     svg{
         font-size: 2rem;
         fill: ${({theme}) => theme.text};
+        @media (min-width: 1201px) {
+            font-size: 3rem;
+        }
     }
 `;
 
@@ -280,6 +349,12 @@ export const MainProyectosContainerTheme = styled.div`
     background-color: ${({theme}) => theme.bgc};
     @media (min-width: 769px) {
         height: 55vh;
+    }
+    @media (min-width: 1201px) {
+        height: 70vh;
+    }
+    @media (min-width: 1600px) {
+        height: 70vh;
     }
 `;
 
@@ -299,6 +374,10 @@ export const MainProyectoTituloH2Theme = styled.h2`
     text-align: center;
     font-size: 2rem;
     color: ${({theme}) => theme.color2};
+    @media (min-width: 1201px) {
+        font-size: 2.3rem;
+        padding-top: 20px;
+    }
 `;
 
 export const MainProyectoImageTheme = styled.img`
@@ -326,6 +405,9 @@ export const ProyectoWrapperTheme = styled.div`
 
     h3{
         margin: 5px auto;
+        @media (min-width: 1201px) {
+            font-size: 1.7rem;
+        }
     }
     a{
         color: ${({theme}) => theme.text};
@@ -335,6 +417,9 @@ export const ProyectoWrapperTheme = styled.div`
         @media (min-width: 769px) {
             width: 80%;
             margin: 0px auto;
+        }
+        @media (min-width: 1201px) {
+            font-size: 1.4rem;
         }
     }
 `;
@@ -348,6 +433,14 @@ export const ContactoContainerTheme = styled.div`
     background-color: ${({theme}) => theme.bgc};
     width: 80%;
     margin: 0px auto;
+    @media (min-width: 1201px) {
+        padding: 0px 200px;
+        height: 80vh;
+    }
+    @media (min-width: 1600px) {
+        padding: 0px 200px;
+        height: 55vh;
+    }
 `;
 
 export const ContactoWrapperTheme = styled.div`
@@ -389,8 +482,13 @@ export const ContactoDivInsideTheme = styled.div`
         @media (min-width: 381px) {
             width: 50%;
         }
-        @media (min-width: 381px) {
+        @media (min-width: 769px) {
+            font-size: 1.2rem;
             width: 40%;
+        }
+        @media (min-width: 1201px) {
+            font-size: 1.4rem;
+            width: 36%;
         }
     }
     textarea{
@@ -402,6 +500,10 @@ export const ContactoDivInsideTheme = styled.div`
             width: 80%;
             font-size: 1.3rem;
         }
+        @media (min-width: 1201px) {
+            width: 70%;
+            font-size: 1.4rem;
+        }
     }
     button{
         color: ${({theme}) => theme.color1};
@@ -411,6 +513,7 @@ export const ContactoDivInsideTheme = styled.div`
         font-weight: 600;
         border: 1px solid ${({theme}) => theme.text};
         border-radius: 3px;
+        cursor: pointer;
     }
 
 `;
@@ -426,6 +529,16 @@ export const ContactoIconoLinkedin = styled.a`
     margin-top: 5px;
     text-align: center;
     color: ${({theme}) => theme.bgcLinkedinIcon};
+    @media (min-width: 769px) {
+            margin: 0px auto;
+            width: 60%;
+        }
+    @media (min-width: 1201px) {
+        width: 70%;
+    }
+    @media (min-width: 1600px) {
+        width: 40%;
+    }
     i{
         font-size: 2rem;
         @media (min-width: 381px) {
