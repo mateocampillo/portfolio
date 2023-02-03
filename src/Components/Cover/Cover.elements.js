@@ -58,15 +58,22 @@ export const HeaderUlTheme = styled.ul`
 // MAIN CONTAINER SECTION
 
 export const SectionAboutTheme = styled.div`
-  color: #fff;
-  position: absolute;
-  background-color: ${({theme}) => theme.bgcAbout};
-  margin: 10px 20px;
-  border-radius: 5px;
-  right: 0%;
-  opacity: 0%;
-  visibility: hidden;
-  font-family: 'Work Sans', sans-serif;
+    color: #fff;
+    position: absolute;
+    background-color: ${({theme}) => theme.bgcAbout};
+    margin: 10px 20px;
+    border-radius: 5px;
+    right: 0%;
+    opacity: 0%;
+    visibility: hidden;
+    font-family: 'Work Sans', sans-serif;
+    @media (min-width: 769px) {
+        display: flex;
+        flex-direction: row;
+        p{
+            font-size: 1.2rem;
+        }
+    }
 
   div{
       padding: 15px 5px;
@@ -85,12 +92,19 @@ export const SectionAboutImageDivTheme = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: center;
+    @media (min-width: 769px) {
+        margin: 30px 30px;
+        width: 65%;
+    }
 `; 
 
 export const SectionAboutImageTheme = styled.img`
     width: 70%;
     @media (min-width: 381px) {
         width: 50%;
+    }
+    @media (min-width: 769px) {
+        width: 100%;
     }
 `; 
 
@@ -113,6 +127,11 @@ export const MainInfoTheme = styled.div`
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    @media (min-width: 769px){
+        height: 50vh;
+        flex-direction: row;
+        padding: 0 50px;
+    }
 `;
 
 export const MainInfoIntroTheme = styled.div`
@@ -137,6 +156,10 @@ export const MainInfoIntroTheme = styled.div`
 export const MainInfoDescTheme = styled.div`
     width: 80vw;
     text-align: left;
+    @media (min-width: 769px){
+            width: 50%;
+            text-align: center;
+        }
 
     p{
         font-size: 1.1rem;
@@ -172,6 +195,9 @@ export const MainInfoDescTheme = styled.div`
         margin-top: 30px;
         border-bottom: 1px solid ${({theme}) => theme.color2};
         transition: all 200ms ease-in;
+        @media (min-width: 769px) {
+            font-size: 1.5rem;
+        }
     }
 `;
 
@@ -180,6 +206,11 @@ export const MainInfoIconsTheme = styled.div`
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    @media (min-width: 769px){
+        flex-direction: column;
+        height: 80%;
+        width: 20%;
+    }
 
     i{
         font-size: 2rem;
@@ -190,6 +221,9 @@ export const MainInfoIconsTheme = styled.div`
     a{
         text-decoration: none;
         color: ${({theme}) => theme.text};
+        @media (min-width: 769px){
+            text-align: center;
+        }
     }
     button{
         background-color: ${({theme}) => theme.bgc};
@@ -242,8 +276,11 @@ export const SwitchModeButton = styled.button`
 
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 100vh;
+    height: 110vh;
     background-color: ${({theme}) => theme.bgc};
+    @media (min-width: 769px) {
+        height: 55vh;
+    }
 `;
 
 export const MainProyectosWrapperTheme = styled.div`
@@ -253,12 +290,15 @@ export const MainProyectosWrapperTheme = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-    h2{
-        text-align: center;
-        font-size: 2rem;
-        color: ${({theme}) => theme.color2};
+    @media (min-width: 769px) {
+        flex-direction: row;
     }
+`;
+
+export const MainProyectoTituloH2Theme = styled.h2`
+    text-align: center;
+    font-size: 2rem;
+    color: ${({theme}) => theme.color2};
 `;
 
 export const MainProyectoImageTheme = styled.img`
@@ -268,11 +308,18 @@ export const MainProyectoImageTheme = styled.img`
     @media (min-width: 381px) {
         width: 50%;
     }
+    @media (min-width: 769px) {
+        width: 50%;
+        :hover{
+            filter: blur(2px);
+        }
+    }
 `; 
 
 export const ProyectoWrapperTheme = styled.div`
     text-align: center;
     color: ${({theme}) => theme.text};
+    position: relative;
     @media (min-width: 381px) {
         margin: 10px auto;
     }
@@ -284,6 +331,12 @@ export const ProyectoWrapperTheme = styled.div`
         color: ${({theme}) => theme.text};
         text-decoration: underline 1px solid ${({theme}) => theme.color2};
     }
+    p{
+        @media (min-width: 769px) {
+            width: 80%;
+            margin: 0px auto;
+        }
+    }
 `;
 
 //FIN MAIN PROYECTOS SECTION
@@ -291,7 +344,7 @@ export const ProyectoWrapperTheme = styled.div`
 
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 70vh;
+    height: 74vh;
     background-color: ${({theme}) => theme.bgc};
     width: 80%;
     margin: 0px auto;
@@ -310,6 +363,9 @@ export const ContactoWrapperTheme = styled.div`
     h3{
         text-align: left;
         color: ${({theme}) => theme.color1};
+        @media (min-width: 769px) {
+            font-size: 1.5rem;
+        }
     }
 `;
 
@@ -333,11 +389,19 @@ export const ContactoDivInsideTheme = styled.div`
         @media (min-width: 381px) {
             width: 50%;
         }
+        @media (min-width: 381px) {
+            width: 40%;
+        }
     }
     textarea{
         width: 100%;
-        font-size: 1rem;
+        font-size: 1.2rem;
         padding: 4px;
+        font-family: "Times New Roman", Times, serif;
+        @media (min-width: 381px) {
+            width: 80%;
+            font-size: 1.3rem;
+        }
     }
     button{
         color: ${({theme}) => theme.color1};
