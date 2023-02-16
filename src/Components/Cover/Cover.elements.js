@@ -345,7 +345,7 @@ export const SwitchModeButton = styled.button`
 
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 110vh;
+    height: 80vh;
     background-color: ${({theme}) => theme.bgc};
     @media (min-width: 769px) {
         height: 55vh;
