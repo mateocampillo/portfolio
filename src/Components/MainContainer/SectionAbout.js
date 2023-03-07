@@ -13,7 +13,8 @@ function SectionAbout() {
         <SectionAboutImageDivTheme><SectionAboutImageTheme alt='foto-mateo-campillo' src="/img/foto mia cv rectangulo.jpg"/></SectionAboutImageDivTheme>
         <SectionAboutTextoTheme>
           <div><p>Buenas! mi nombre es Mateo Campillo, web developer.</p></div>
-          <div><p>Desde pequeño sabia que mi carrera se iba a desarrollador de forma electrónica, y cuando descubrí el web development me enamore por completo. Siento que me permite crecer constatemente y explotar mi creatividad.</p></div>
+          <div><p>Desde pequeño sabia que mi carrera se iba a desarrollar de forma electrónica, y cuando descubrí el web development me enamore por completo. Siento que me permite crecer constantemente y explotar mi creatividad.</p></div>
+          <div><p>Otro parrafo aca Otro parrafo aca Otro parrafo aca v Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca</p></div>
           <div><p>Stack MERN y algunas tecnologías más:</p></div>
           <SectionAboutStackTheme id='aboutTechStack'>
             <i class="devicon-react-original colored"></i>

@@ -16,8 +16,8 @@ export const HrTheme = styled.hr`
     border-bottom: none;
     width: 80%;
     margin: 10px auto;
-    @media (min-width: 1201px){
-        border-top: 3px dashed ${({theme}) => theme.text};;
+    @media (min-width: 769px){
+        display: none;
     }
 `;
 
@@ -83,15 +83,24 @@ export const SectionAboutTheme = styled.div`
     margin: 10px 20px;
     border-radius: 5px;
     right: 0%;
+    max-height: 100vh;
     opacity: 0%;
+    z-index: 10;
     visibility: hidden;
     font-family: 'Work Sans', sans-serif;
     @media (min-width: 769px) {
-        display: flex;
-        flex-direction: row;
         p{
             font-size: 1.2rem;
         }
+    }
+    @media (min-width: 992px) {
+        margin: 25px 5vw 0px;
+    }
+    @media (min-width: 1200px) {
+        margin: 25px 10vw 0px;
+    }
+    @media (min-width: 1400px) {
+        margin: 28px 13vw 0px;
     }
 
   div{
@@ -124,14 +133,7 @@ export const SectionAboutImageDivTheme = styled.div`
     flex-direction: row;
     justify-content: center;
     @media (min-width: 769px) {
-        margin: 30px 30px;
-        width: 100%;
-    }
-    @media (min-width: 1201px){
-        width: 40%;
-    }
-    @media (min-width: 1600px){
-        width: 25%;
+        display: none;
     }
 `; 
 
@@ -162,18 +164,17 @@ export const SectionAboutStackTheme = styled.div`
 
 export const MainInfoTheme = styled.div`
     color: ${({theme}) => theme.text};
-    height: 80vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     @media (min-width: 769px){
-        height: 50vh;
+        height: 60vh;
         flex-direction: row;
         padding: 0 50px;
     }
     @media (min-width: 1201px){
-        height: 40vh;
         padding: 0px 100px;
     }
 `;
@@ -189,7 +190,7 @@ export const MainInfoIntroTheme = styled.div`
             margin-top: 15px;
         }
         @media (min-width: 1201px){
-            font-size: 3rem;
+            font-size: 5rem;
             font-weight: 400;
         }
     }
@@ -205,12 +206,41 @@ export const MainInfoDescTheme = styled.div`
     width: 80vw;
     text-align: left;
     @media (min-width: 769px){
-            width: 50%;
-            text-align: center;
-        }
-
+        width: 50%;
+        text-align: center;
+    }
+    @media (min-width: 1200px){
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
     p{
-        font-size: 1.1rem;
+        .underlined{
+            position: relative;
+        }
+        .underline-clip:after {
+            content: '';
+            position: absolute;
+            top: 95%;
+            width: 150%;
+            aspect-ratio: 3 / 1;
+            left: 50%;
+            transform: translate(-50%, 0);
+            border-radius: 50%;
+            border: 6px solid ${({theme}) => theme.mainInfo};
+            /* Use a clip-path to hide and show the bits you want */
+            clip-path: polygon(0 0, 50% 50%, 100% 0);
+        }
+        .multicolor{
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(35deg, red, blue);
+        }
+        font-size: 1.2rem;
+        line-height: 40px;
         padding-bottom: 20px;
         @media (min-width: 381px) {
             font-size: 1.4rem;
@@ -256,6 +286,9 @@ export const MainInfoDescTheme = styled.div`
         @media (min-width: 769px) {
             font-size: 1.5rem;
         }
+        @media (min-width: 1200px) {
+            width: 120px;
+        }
     }
 `;
 
@@ -264,18 +297,16 @@ export const MainInfoIconsTheme = styled.div`
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
+    margin-bottom: 40px;
     @media (min-width: 769px){
-        flex-direction: column;
-        height: 80%;
-        width: 20%;
+        margin-bottom: 60px;
     }
-
     i{
         font-size: 2rem;
         @media (min-width: 381px) {
             font-size: 2.5rem;
         }
-        @media (min-width: 1201px) {
+        @media (min-width: 769px) {
             font-size: 3rem;
         }
     }
@@ -317,7 +348,9 @@ export const SwitchModeContainer = styled.div`
     left: 80%;
     @media (min-width: 381px) {
         bottom: 5%;
-        left: 88%;
+    }
+    @media (min-width: 768px) {
+        left: 85%;
     }
     @media (min-width: 1201px) {
         left: 95%;
@@ -328,12 +361,12 @@ export const SwitchModeButton = styled.button`
     padding: 4px;
     border: 1px solid ${({theme}) => theme.text};
     border-radius: 3px;
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.switchBcg};
     cursor: pointer;
 
     svg{
         font-size: 2rem;
-        fill: ${({theme}) => theme.text};
+        fill: ${({theme}) => theme.switchColor};
         @media (min-width: 1201px) {
             font-size: 3rem;
         }
@@ -345,16 +378,18 @@ export const SwitchModeButton = styled.button`
 
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 80vh;
+    height: 100vh;
     background-color: ${({theme}) => theme.bgc};
+    position: relative;
     @media (min-width: 769px) {
-        height: 55vh;
+        padding-top: 140px;
+        height: 70vh;
+    }
+    @media (min-width: 992px) {
+        height: 80vh;
     }
     @media (min-width: 1201px) {
-        height: 70vh;
-    }
-    @media (min-width: 1600px) {
-        height: 70vh;
+        height: 90vh;
     }
 `;
 
@@ -384,14 +419,17 @@ export const MainProyectoImageTheme = styled.img`
     width: 90%;
     border: 1px solid ${({theme}) => theme.text};
     border-radius: 3px;
-    @media (min-width: 381px) {
-        width: 50%;
+    @media (min-width: 500px) {
+        width: 65%;
     }
     @media (min-width: 769px) {
-        width: 50%;
+        width: 80%;
         :hover{
             filter: blur(2px);
         }
+    }
+    @media (min-width: 1500px) {
+        width: 70%;
     }
 `; 
 
@@ -399,6 +437,7 @@ export const ProyectoWrapperTheme = styled.div`
     text-align: center;
     color: ${({theme}) => theme.text};
     position: relative;
+    height: 80%;
     @media (min-width: 381px) {
         margin: 10px auto;
     }
@@ -419,7 +458,7 @@ export const ProyectoWrapperTheme = styled.div`
             margin: 0px auto;
         }
         @media (min-width: 1201px) {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
         }
     }
 `;
@@ -429,17 +468,18 @@ export const ProyectoWrapperTheme = styled.div`
 
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 74vh;
+    height: 65vh;
     background-color: ${({theme}) => theme.bgc};
     width: 80%;
     margin: 0px auto;
-    @media (min-width: 1201px) {
-        padding: 0px 200px;
+    position: relative;
+    @media (min-width: 769px) {
+        padding: 100px 0px 0px;
         height: 80vh;
     }
-    @media (min-width: 1600px) {
-        padding: 0px 200px;
-        height: 55vh;
+    @media (min-width: 1201px) {
+        padding: 100px 200px 0px;
+        height: 85vh;
     }
 `;
 
@@ -479,6 +519,8 @@ export const ContactoDivInsideTheme = styled.div`
     input{
         font-size: 1.1rem;
         padding: 5px;
+        background-color: ${({theme}) => theme.white};
+        border: 1px solid ${({theme}) => theme.text};
         @media (min-width: 381px) {
             width: 50%;
         }
@@ -496,6 +538,8 @@ export const ContactoDivInsideTheme = styled.div`
         font-size: 1.2rem;
         padding: 4px;
         font-family: "Times New Roman", Times, serif;
+        background-color: ${({theme}) => theme.white};
+        border: 1px solid ${({theme}) => theme.text};
         @media (min-width: 381px) {
             width: 80%;
             font-size: 1.3rem;

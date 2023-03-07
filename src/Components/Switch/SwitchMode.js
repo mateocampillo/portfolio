@@ -15,7 +15,7 @@ function SwitchMode(props) {
         }
     }
 
-    let iconoMode = props.theme === 'dark' ? <MdOutlineDarkMode/> : <MdLightMode/>;
+    let iconoMode = props.theme === 'dark' ? <MdLightMode/> : <MdOutlineDarkMode/>;
 
     return (
         <SwitchModeContainer>

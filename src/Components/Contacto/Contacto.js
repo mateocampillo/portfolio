@@ -8,6 +8,7 @@ import {
 } from '../Cover/Cover.elements';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import DividerTilt from '../Extras/DividerTilt';
 
 function Contacto() {
 
@@ -35,6 +36,7 @@ function Contacto() {
 
     return (
         <ContactoContainerTheme id='Contacto'>
+            <DividerTilt />
             <ContactoWrapperTheme>
                 <h2>Contacto</h2>
                 <h3>Dejame un mensaje!</h3>
