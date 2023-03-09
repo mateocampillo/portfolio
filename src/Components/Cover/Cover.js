@@ -12,9 +12,7 @@ function Cover() {
         <>
             <Header />
             <MainContainer />
-            <HrTheme/>
             <MainProyectos />
-            <HrTheme/>
             <Contacto />
             <HrTheme/>
             <Footer />

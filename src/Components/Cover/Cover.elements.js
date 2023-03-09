@@ -376,12 +376,12 @@ export const SwitchModeButton = styled.button`
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
     height: 100vh;
-    background-color: ${({theme}) => theme.bcg1};
+    background-color: ${({theme}) => theme.bcg2};
     position: relative;
+    padding-top: 70px;
     @media (min-width: 769px) {
         padding-top: 140px;
         height: 70vh;
-        background-color: ${({theme}) => theme.bcg2};
     }
     @media (min-width: 992px) {
         height: 80vh;
@@ -406,10 +406,7 @@ export const MainProyectosWrapperTheme = styled.div`
 export const MainProyectoTituloH2Theme = styled.h2`
     text-align: center;
     font-size: 2rem;
-    color: ${({theme}) => theme.color2};
-    @media (min-width: 769px) {
-        color: ${({theme}) => theme.proyecto_679px_text};
-    }
+    color: ${({theme}) => theme.proyecto_679px_text};
     @media (min-width: 1201px) {
         font-size: 2.3rem;
         padding-top: 20px;
@@ -437,6 +434,7 @@ export const MainProyectoImageTheme = styled.img`
 export const ProyectoWrapperTheme = styled.div`
     text-align: center;
     color: ${({theme}) => theme.text};
+    
     position: relative;
     height: 80%;
     @media (min-width: 381px) {
@@ -450,18 +448,14 @@ export const ProyectoWrapperTheme = styled.div`
         }
     }
     a{
-        color: ${({theme}) => theme.color2};
-        text-decoration: underline 1px solid ${({theme}) => theme.text};
-        @media (min-width: 769px) {
-            color: ${({theme}) => theme.proyecto_679px_text};
-            text-decoration: underline 1px solid ${({theme}) => theme.whiteOrBlack};
-        }
+        color: ${({theme}) => theme.proyecto_679px_text};
+        text-decoration: underline 1px solid ${({theme}) => theme.whiteOrBlack};
     }
     p{
+        color: ${({theme}) => theme.whiteOrBlack};
         @media (min-width: 769px) {
             width: 80%;
             margin: 0px auto;
-            color: ${({theme}) => theme.whiteOrBlack};
         }
         @media (min-width: 1201px) {
             font-size: 1.2rem;
@@ -474,20 +468,23 @@ export const ProyectoWrapperTheme = styled.div`
 
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 65vh;
+    height: 70vh;
     background-color: ${({theme}) => theme.bcg1};
-    width: 80%;
+    width: 100%;
     margin: 0px auto;
     position: relative;
+    padding: 70px 0px 0px;
     @media (min-width: 769px) {
         padding: 100px 0px 0px;
         height: 80vh;
-        width: 100%;
     }
-    @media (min-width: 1201px) {
-        padding: 100px 200px 0px;
-        height: 85vh;
+    @media (min-width: 992px) {
+        padding: 100px 50px 0px;
     }
+    @media (min-width: 1400px) {
+        height: 75vh;
+    }
+
 `;
 
 export const ContactoWrapperTheme = styled.div`
@@ -501,7 +498,7 @@ export const ContactoWrapperTheme = styled.div`
         }
     }
     h3{
-        text-align: left;
+        text-align: center;
         color: ${({theme}) => theme.color1};
         @media (min-width: 769px) {
             font-size: 1.5rem;
@@ -509,10 +506,46 @@ export const ContactoWrapperTheme = styled.div`
     }
 `;
 
+export const ContactoColumnas = styled.div`
+    @media (min-width: 992px){
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+    @media (min-width: 1200px){
+        grid-template-columns: 35% 65%;
+    }
+    @media (min-width: 1400px){
+        grid-template-columns: 30% 70%;
+    }
+`;
+
+export const ContactoColumnasPrimera = styled.div`
+    display: none;
+    @media (min-width: 992px){
+        color: ${({theme}) => theme.text};
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p{
+            text-align: center;
+            font-family: 'Kanit', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 200;
+            line-height: 4vh;
+            @media (min-width: 1200px){
+                font-size: 1.2rem;
+            }
+            @media (min-width: 1400px){
+                font-size: 1.3rem;
+            }
+        }
+    }
+`;
+
 export const ContactoDivInsideTheme = styled.div`
     text-align: center;
     margin: 20px auto;
-
     label{
         display: block;
         margin: 10px auto;
@@ -541,7 +574,7 @@ export const ContactoDivInsideTheme = styled.div`
         }
     }
     textarea{
-        width: 100%;
+        width: 95%;
         font-size: 1.2rem;
         padding: 4px;
         font-family: "Times New Roman", Times, serif;
@@ -553,6 +586,10 @@ export const ContactoDivInsideTheme = styled.div`
         }
         @media (min-width: 1201px) {
             width: 70%;
+            font-size: 1.4rem;
+        }
+        @media (min-width: 1400px) {
+            width: 60%;
             font-size: 1.4rem;
         }
     }

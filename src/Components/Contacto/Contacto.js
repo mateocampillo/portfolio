@@ -4,7 +4,9 @@ import {
     ContactoWrapperTheme,
     ContactoDivInsideTheme,
     ContactoIconoLinkedin,
-    ContactoH3IconoLinkedin
+    ContactoH3IconoLinkedin,
+    ContactoColumnas,
+    ContactoColumnasPrimera
 } from '../Cover/Cover.elements';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
@@ -39,24 +41,33 @@ function Contacto() {
             <DividerTilt />
             <ContactoWrapperTheme>
                 <h2>Contacto</h2>
-                <h3>Dejame un mensaje!</h3>
-                <form ref={form} onSubmit={sendEmail}>
-                    <ContactoDivInsideTheme>
-                        <label>Nombre y apellido</label>
-                        <input type='text' name="user_name" required></input>
-                    </ContactoDivInsideTheme>
-                    <ContactoDivInsideTheme>
-                        <label>Email</label>
-                        <input type='email' name="user_email" required></input>
-                    </ContactoDivInsideTheme>
-                    <ContactoDivInsideTheme>
-                        <label>Mensaje</label>
-                        <textarea rows={5} name="message" required></textarea>
-                    </ContactoDivInsideTheme>
-                    <ContactoDivInsideTheme>
-                        <button id='buttonSubmitContacto' type='submit' value="Send" >Enviar</button>
-                    </ContactoDivInsideTheme>
-                </form>
+                <ContactoColumnas>
+                    <ContactoColumnasPrimera>
+                        <p>Si te ha gustado mi trabajo y estás buscando un profesional capacitado para unirte a tu equipo, no dudes en contactarme.</p>
+                        <p>Estoy ansioso por discutir cómo mi experiencia y habilidades pueden contribuir al éxito de tu proyecto o empresa.</p>
+                        <p>¡No esperes más para contactarme y juntos lograremos grandes cosas!</p>
+                    </ContactoColumnasPrimera>
+                    <div>
+                        <h3>Dejame un mensaje!</h3>
+                        <form ref={form} onSubmit={sendEmail}>
+                            <ContactoDivInsideTheme>
+                                <label>Nombre y apellido</label>
+                                <input type='text' name="user_name" required></input>
+                            </ContactoDivInsideTheme>
+                            <ContactoDivInsideTheme>
+                                <label>Email</label>
+                                <input type='email' name="user_email" required></input>
+                            </ContactoDivInsideTheme>
+                            <ContactoDivInsideTheme>
+                                <label>Mensaje</label>
+                                <textarea rows={5} name="message" required></textarea>
+                            </ContactoDivInsideTheme>
+                            <ContactoDivInsideTheme>
+                                <button id='buttonSubmitContacto' type='submit' value="Send" >Enviar</button>
+                            </ContactoDivInsideTheme>
+                        </form>
+                    </div>
+                </ContactoColumnas>
                 <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>O podemos conectar en Linkedin!</ContactoH3IconoLinkedin><i class="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
             </ContactoWrapperTheme>
         </ContactoContainerTheme>
