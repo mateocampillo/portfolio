@@ -3,8 +3,7 @@ window.addEventListener('load', function() {
     let about = document.querySelector('#about-a');
     let aboutContainer = document.querySelector('#sectionAbout');
 
-    about.addEventListener('click', function(e) {
-        e.preventDefault();
+    about.addEventListener('click', function() {
         if(aboutContainer.classList.contains('claseAnimacionAbout')){
             aboutContainer.classList.remove('claseAnimacionAbout')
             aboutContainer.classList.add('claseAnimacionAboutOut')
@@ -16,21 +15,21 @@ window.addEventListener('load', function() {
 
     let crossAbout = document.querySelector('#cerrarAbout');
 
-    crossAbout.addEventListener('click', function() {
+    crossAbout.addEventListener('pointerdown', function() {
         aboutContainer.classList.remove('claseAnimacionAbout')
         aboutContainer.classList.add('claseAnimacionAboutOut')
     });
 
     let infoAbout = document.querySelector('#mainInfo-button');
 
-    infoAbout.addEventListener('click', function() {
+    infoAbout.addEventListener('pointerdown', function() {
         aboutContainer.classList.remove('claseAnimacionAboutOut')
         aboutContainer.classList.add('claseAnimacionAbout')
     });
 
     let englishButton = document.querySelector('#mainInfoIcons-button');
 
-    englishButton.addEventListener('click', function() {
+    englishButton.addEventListener('pointerdown', function() {
         alert('Coming soon');
     })
 })

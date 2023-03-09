@@ -36,7 +36,6 @@ export const HeaderUlTheme = styled.ul`
         font-size: 2rem;
         font-weight: 600;
     }
-
     li {
         a{
             text-decoration: none;
@@ -52,6 +51,17 @@ export const HeaderUlTheme = styled.ul`
             a{
                 color: ${({theme}) => theme.color1};
             }
+            button{
+                color: ${({theme}) => theme.color1};
+                background: none;
+                border: none;
+                font-size: 1.4rem;
+                cursor: pointer;
+                @media (min-width: 1201px){
+                    font-size: 2rem;
+                    font-weight: 600;
+                }
+            }
         }
         &:nth-of-type(2){
             padding: 3px;
@@ -64,7 +74,6 @@ export const HeaderUlTheme = styled.ul`
             a{
                 color: ${({theme}) => theme.color2};
             }
-            
         }
     }
 
