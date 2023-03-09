@@ -1,17 +1,14 @@
 import styled from 'styled-components';
 
 export const BodyTheme = styled.div`
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.bcg1};
     height: 100%;
     transition: 200ms all ease-in;
     position: relative;
-    @media (min-width: 1201px){
-        padding: 0px 100px;
-    }
 `;
 
 export const HrTheme = styled.hr`
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.bcg1};
 	border-top: 2px dashed ${({theme}) => theme.text};
     border-bottom: none;
     width: 80%;
@@ -79,7 +76,7 @@ export const HeaderUlTheme = styled.ul`
 export const SectionAboutTheme = styled.div`
     color: #fff;
     position: absolute;
-    background-color: ${({theme}) => theme.bgcAbout};
+    background-color: ${({theme}) => theme.aboutBcg};
     margin: 10px 20px;
     border-radius: 5px;
     right: 0%;
@@ -112,7 +109,7 @@ export const SectionAboutTheme = styled.div`
     position: absolute;
     right: 17px;
     top: 5px;
-    fill: ${({theme}) => theme.cerrarAbout};
+    fill: ${({theme}) => theme.aboutCerrar};
     cursor: pointer;
   }
 `;
@@ -274,7 +271,7 @@ export const MainInfoDescTheme = styled.div`
         }
     }
     button{
-        background-color: ${({theme}) => theme.bgc};
+        background-color: ${({theme}) => theme.bcg1};
         border: none;
         color: ${({theme}) => theme.color2};
         font-size: 1.2rem;
@@ -318,7 +315,7 @@ export const MainInfoIconsTheme = styled.div`
         }
     }
     button{
-        background-color: ${({theme}) => theme.bgc};
+        background-color: ${({theme}) => theme.bcg1};
         border: none;
         cursor: pointer;
         font-size: 1rem;
@@ -379,11 +376,12 @@ export const SwitchModeButton = styled.button`
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
     height: 100vh;
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.bcg1};
     position: relative;
     @media (min-width: 769px) {
         padding-top: 140px;
         height: 70vh;
+        background-color: ${({theme}) => theme.bcg2};
     }
     @media (min-width: 992px) {
         height: 80vh;
@@ -409,6 +407,9 @@ export const MainProyectoTituloH2Theme = styled.h2`
     text-align: center;
     font-size: 2rem;
     color: ${({theme}) => theme.color2};
+    @media (min-width: 769px) {
+        color: ${({theme}) => theme.proyecto_679px_text};
+    }
     @media (min-width: 1201px) {
         font-size: 2.3rem;
         padding-top: 20px;
@@ -417,7 +418,7 @@ export const MainProyectoTituloH2Theme = styled.h2`
 
 export const MainProyectoImageTheme = styled.img`
     width: 90%;
-    border: 1px solid ${({theme}) => theme.text};
+    border: 1px solid ${({theme}) => theme.bcg1};
     border-radius: 3px;
     @media (min-width: 500px) {
         width: 65%;
@@ -449,13 +450,18 @@ export const ProyectoWrapperTheme = styled.div`
         }
     }
     a{
-        color: ${({theme}) => theme.text};
-        text-decoration: underline 1px solid ${({theme}) => theme.color2};
+        color: ${({theme}) => theme.color2};
+        text-decoration: underline 1px solid ${({theme}) => theme.text};
+        @media (min-width: 769px) {
+            color: ${({theme}) => theme.proyecto_679px_text};
+            text-decoration: underline 1px solid ${({theme}) => theme.whiteOrBlack};
+        }
     }
     p{
         @media (min-width: 769px) {
             width: 80%;
             margin: 0px auto;
+            color: ${({theme}) => theme.whiteOrBlack};
         }
         @media (min-width: 1201px) {
             font-size: 1.2rem;
@@ -469,13 +475,14 @@ export const ProyectoWrapperTheme = styled.div`
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
     height: 65vh;
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.bcg1};
     width: 80%;
     margin: 0px auto;
     position: relative;
     @media (min-width: 769px) {
         padding: 100px 0px 0px;
         height: 80vh;
+        width: 100%;
     }
     @media (min-width: 1201px) {
         padding: 100px 200px 0px;
@@ -551,7 +558,7 @@ export const ContactoDivInsideTheme = styled.div`
     }
     button{
         color: ${({theme}) => theme.color1};
-        background-color: ${({theme}) => theme.bgc};
+        background-color: ${({theme}) => theme.bcg1};
         padding: 5px;
         font-size: 1.3rem;
         font-weight: 600;
@@ -572,7 +579,7 @@ export const ContactoIconoLinkedin = styled.a`
     text-decoration: none;
     margin-top: 5px;
     text-align: center;
-    color: ${({theme}) => theme.bgcLinkedinIcon};
+    color: ${({theme}) => theme.linkedInBcg};
     @media (min-width: 769px) {
             margin: 0px auto;
             width: 60%;
@@ -597,7 +604,7 @@ export const ContactoIconoLinkedin = styled.a`
 
 export const FooterContainerTheme = styled.footer`
     transition: all 200ms ease-in;
-    background-color: ${({theme}) => theme.bgc};
+    background-color: ${({theme}) => theme.bcg1};
     width: 80%;
     margin: 0px auto;
 

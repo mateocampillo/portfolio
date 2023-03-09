@@ -1,35 +1,39 @@
 const LightTheme = {
     text: "#000",
-    toggle: "",
-    hover: "",
-    bgc: "#FFE1E1",
-    switchBcg: "#000",
-    switchColor: "#fff",
+    bcg1: "#FFE1E1",
+    bcg2: "#44807D",
+    bcg2Text: "#FFF",
     color1: "#478D82",
     color2: "#b73662",
-    bgcAbout: "#90A17D",
-    cerrarAbout: "#fff",
-    bgcLinkedinIcon: "#0072B1",
-    white: "#fff",
-    divider: "#90A17D",
-    mainInfo: "#1C283A"
+    proyecto_679px_text: "#FFF",
+    switchBcg: "#000",
+    switchColor: "#FFF",
+    aboutBcg: "#44807D",
+    aboutCerrar: "#FFF",
+    linkedInBcg: "#0072B1",
+    mainInfo: "#1C283A",
+    white: "#FFF",
+    black: "#000",
+    whiteOrBlack: "#FFF"
 };
 
 const DarkTheme = {
-    text: "#fff",
-    toggle: "",
-    hover: "",
-    bgc: "#000",
-    switchBcg: "#EAF6F6",
-    switchColor: "#000",
+    text: "#FFF",
+    bcg1: "#000",
+    bcg2: "#fff",
+    bcg2Text: "#FFF",
     color1: "#64FFC7",
     color2: "#EF4625",
-    bgcAbout: "#D6634C",
-    cerrarAbout: "#fff",
-    bgcLinkedinIcon: "#fff",
-    white: "#fff",
-    divider: "#fff",
-    mainInfo: "#FFE1E1"
+    proyecto_679px_text: "#EF4625",
+    switchBcg: "#EF4625",
+    switchColor: "#FFF",
+    aboutBcg: "#D6634C",
+    aboutCerrar: "#FFF",
+    linkedInBcg: "#fff",
+    mainInfo: "#FFE1E1",
+    white: "#FFF",
+    black: "#000",
+    whiteOrBlack: "#000"
 };
 
 const Themes = {

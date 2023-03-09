@@ -18,7 +18,7 @@ export const DividerCloudStyles = styled.div`
         height: 120px;
     }
     path{
-        fill: ${({theme}) => theme.divider};
+        fill: ${({theme}) => theme.bcg1};
     }
 `;
 
@@ -40,6 +40,6 @@ export const DividerTiltStyles = styled.div`
         height: 72px;
     }
     path{
-        fill: ${({theme}) => theme.divider};
+        fill: ${({theme}) => theme.bcg2};
     }
 `;
