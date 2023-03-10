@@ -3,7 +3,7 @@ window.addEventListener('load', function() {
     let about = document.querySelector('#about-a');
     let aboutContainer = document.querySelector('#sectionAbout');
 
-    about.addEventListener('click', function() {
+    about.addEventListener('pointerdown', function() {
         if(aboutContainer.classList.contains('claseAnimacionAbout')){
             aboutContainer.classList.remove('claseAnimacionAbout')
             aboutContainer.classList.add('claseAnimacionAboutOut')
