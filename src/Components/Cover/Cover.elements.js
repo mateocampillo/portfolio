@@ -31,6 +31,7 @@ export const HeaderUlTheme = styled.ul`
     font-size: 1.4rem;
     list-style-type: none;
     font-family: 'Work Sans', sans-serif;
+    touch-action: none;
     @media (min-width: 1201px){
         margin: 20px auto 0px;
         font-size: 2rem;
