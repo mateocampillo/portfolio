@@ -17,14 +17,14 @@ function SectionAbout() {
           <div><p>Otro parrafo aca Otro parrafo aca Otro parrafo aca v Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca</p></div>
           <div><p>Stack MERN y algunas tecnologías más:</p></div>
           <SectionAboutStackTheme id='aboutTechStack'>
-            <i class="devicon-react-original colored"></i>
-            <i class="devicon-nodejs-plain colored"></i>
-            <i class="devicon-express-original colored"></i>
-            <i class="devicon-javascript-plain colored"></i>
-            <i class="devicon-mysql-plain colored"></i>
-            <i class="devicon-bootstrap-plain colored"></i>
-            <i class="devicon-html5-plain"></i>
-            <i class="devicon-css3-plain colored"></i>
+            <i className="devicon-react-original colored"></i>
+            <i className="devicon-nodejs-plain colored"></i>
+            <i className="devicon-express-original colored"></i>
+            <i className="devicon-javascript-plain colored"></i>
+            <i className="devicon-mysql-plain colored"></i>
+            <i className="devicon-bootstrap-plain colored"></i>
+            <i className="devicon-html5-plain"></i>
+            <i className="devicon-css3-plain colored"></i>
           </SectionAboutStackTheme>
         </SectionAboutTextoTheme>
       </SectionAboutTheme>

@@ -68,7 +68,7 @@ function Contacto() {
                         </form>
                     </div>
                 </ContactoColumnas>
-                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>O podemos conectar en Linkedin!</ContactoH3IconoLinkedin><i class="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
+                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>O podemos conectar en Linkedin!</ContactoH3IconoLinkedin><i className="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
             </ContactoWrapperTheme>
         </ContactoContainerTheme>
     )
