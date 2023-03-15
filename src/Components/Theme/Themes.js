@@ -6,7 +6,7 @@ const LightTheme = {
     color1: "#478D82",
     color2: "#b73662",
     proyecto_679px_text: "#FFF",
-    switchBcg: "#000",
+    switchBcg: "#b73662",
     switchColor: "#FFF",
     aboutBcg: "#44807D",
     aboutCerrar: "#FFF",

@@ -89,6 +89,7 @@ export const SectionAboutTheme = styled.div`
     background-color: ${({theme}) => theme.aboutBcg};
     margin: 10px 20px;
     border-radius: 5px;
+    border: 1px solid ${({theme}) => theme.whiteOrBlack};
     right: 0%;
     max-height: 100vh;
     opacity: 0%;
@@ -171,7 +172,7 @@ export const SectionAboutStackTheme = styled.div`
 
 export const MainInfoTheme = styled.div`
     color: ${({theme}) => theme.text};
-    height: 70vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -187,14 +188,25 @@ export const MainInfoTheme = styled.div`
 `;
 
 export const MainInfoIntroTheme = styled.div`
+    width: 80vw;
+    p{
+        color: ${({theme}) => theme.color1};
+        font-weight: 500;
+        font-size: 1.4rem;
+    }
     h1{
         padding-top: 10px;
-        font-size: 2.4rem;
-        font-weight: 100;
+        font-size: 3.5rem;
+        font-family: 'Montserrat', sans-serif;
+        font-style: italic;
+        font-weight: 600;
         text-align: center;
         @media (min-width: 381px) {
-            font-size: 2.8rem;
+            font-size: 3.5rem;
             margin-top: 15px;
+        }
+        @media (min-width: 769px) {
+            text-align: left;
         }
         @media (min-width: 1201px){
             font-size: 5rem;
@@ -204,12 +216,13 @@ export const MainInfoIntroTheme = styled.div`
     h2{
         padding-top: 45px;
         color: ${({theme}) => theme.color1};
-        font-size: 2rem;
+        font-size: 1.2rem;
         font-weight: 500;
     }
 `;
 
 export const MainInfoDescTheme = styled.div`
+    /* outline: 1px solid blue; */
     width: 80vw;
     text-align: left;
     @media (min-width: 769px){
@@ -223,71 +236,36 @@ export const MainInfoDescTheme = styled.div`
         justify-content: space-around;
         align-items: center;
     }
-    p{
-        .underlined{
-            position: relative;
-        }
-        .underline-clip:after {
-            content: '';
-            position: absolute;
-            top: 95%;
-            width: 150%;
-            aspect-ratio: 3 / 1;
-            left: 50%;
-            transform: translate(-50%, 0);
-            border-radius: 50%;
-            border: 6px solid ${({theme}) => theme.mainInfo};
-            /* Use a clip-path to hide and show the bits you want */
-            clip-path: polygon(0 0, 50% 50%, 100% 0);
-        }
-        .multicolor{
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-image: linear-gradient(35deg, red, blue);
-        }
-        font-size: 1.2rem;
-        line-height: 40px;
-        padding-bottom: 20px;
-        @media (min-width: 381px) {
-            font-size: 1.4rem;
-        }
-        @media (min-width: 1201px) {
-            font-size: 1.6rem;
-        }
-    }
-    h4, i{
-        display: inline;
+    div{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     svg{
-        font-size: 1.5rem;
-        padding-right: 10px;
-        @media (min-width: 381px) {
-            font-size: 1.7rem;
-        }
-        @media (min-width: 1201px) {
-            font-size: 1.9rem;
-        }
+        font-size: 2.5rem;
+        fill: ${({theme}) => theme.color1};
     }
     h4{
-        font-size: 1.2rem;
+        display: inline;
+        font-size: 1.3rem;
         font-weight: 300;
         padding-left: 10px;
         @media (min-width: 381px) {
-            font-size: 1.4rem;
+            font-size: 1.6rem;
         }
         @media (min-width: 1201px) {
-            font-size: 1.6rem;
+            font-size: 1.8rem;
         }
     }
     button{
-        background-color: ${({theme}) => theme.bcg1};
+        background-color: ${({theme}) => theme.color2};
+        color: ${({theme}) => theme.whiteOrBlack};
         border: none;
-        color: ${({theme}) => theme.color2};
-        font-size: 1.2rem;
+        font-size: 1.5rem;
+        padding: 8px;
+        border-radius: 5px;
         font-weight: 700;
         margin-top: 30px;
-        border-bottom: 1px solid ${({theme}) => theme.color2};
         transition: all 200ms ease-in;
         cursor: pointer;
         @media (min-width: 769px) {
@@ -319,7 +297,7 @@ export const MainInfoIconsTheme = styled.div`
     }
     a{
         text-decoration: none;
-        color: ${({theme}) => theme.text};
+        color: ${({theme}) => theme.color2};
         @media (min-width: 769px){
             text-align: center;
         }
@@ -330,7 +308,7 @@ export const MainInfoIconsTheme = styled.div`
         cursor: pointer;
         font-size: 1rem;
         vertical-align: center;
-        color: ${({theme}) => theme.text};
+        color: ${({theme}) => theme.color2};
         transition: all 200ms ease-in;
         @media (min-width: 1201px) {
             font-size: 1.7rem;

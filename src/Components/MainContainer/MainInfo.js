@@ -1,21 +1,23 @@
+import React from 'react';
 import {
   MainInfoTheme,
   MainInfoIntroTheme,
   MainInfoDescTheme,
   MainInfoIconsTheme
 } from '../Cover/Cover.elements';
+import {BiWorld} from 'react-icons/bi';
 
 function MainInfo() {
     return (
       <>
       <MainInfoTheme id='mainInfo'>
         <MainInfoIntroTheme id='mainInfo-intro'>
+          <p>Desarrollador Web</p>
           <h1>Mateo<br/>Campillo</h1>
-          <h2>Desarrollador Web</h2>
+          <h2>Apasionado por la creación, los diseños elegantes y el progreso.</h2>
         </MainInfoIntroTheme>
         <MainInfoDescTheme id='mainInfo-desc'>
-          <p>Apasionado por la <span className="underlined underline-clip">creación</span>, el <span className="multicolor">diseño</span> y el progreso.</p>
-          <div><i className="fa-solid fa-location-dot"></i><h4>Buenos Aires, Argentina</h4></div>
+          <div><BiWorld /><h4>Buenos Aires, Argentina</h4></div>
           <button id="mainInfo-button">About me</button>
         </MainInfoDescTheme>
       </MainInfoTheme>
