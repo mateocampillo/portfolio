@@ -33,8 +33,6 @@ function setUtils() {
         alert('Coming soon');
     });
 
-    alert('setUtils cargado');
-
 };
 
 document.addEventListener('load', setTimeout(setUtils, 500));
