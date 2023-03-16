@@ -27,6 +27,13 @@ function setUtils() {
         aboutContainer.classList.add('claseAnimacionAbout')
     });
 
+    let infoAboutDesktop = document.querySelector('#MDD-button');
+
+    infoAboutDesktop.addEventListener('pointerdown', function() {
+        aboutContainer.classList.remove('claseAnimacionAboutOut')
+        aboutContainer.classList.add('claseAnimacionAbout')
+    });
+
     let englishButton = document.querySelector('#mainInfoIcons-button');
 
     englishButton.addEventListener('pointerdown', function() {

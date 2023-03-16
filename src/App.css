@@ -22,3 +22,17 @@
 .claseAnimacionAboutOut{
   animation: animacionAboutOut 500ms forwards;
 }
+
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
+#MDD-globe-container:hover > .bounce{
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+/* .bounce:hover {
+  animation-name: bounce;
+  animation-timing-function: ease;
+} */

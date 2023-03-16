@@ -179,7 +179,9 @@ export const MainInfoTheme = styled.div`
     align-items: center;
     @media (min-width: 769px){
         height: 60vh;
-        flex-direction: row;
+        display: grid;
+        grid-template-rows: 100%;
+        grid-template-columns: 50% 50%;
         padding: 0 50px;
     }
     @media (min-width: 1201px){
@@ -189,10 +191,19 @@ export const MainInfoTheme = styled.div`
 
 export const MainInfoIntroTheme = styled.div`
     width: 80vw;
+    @media (min-width: 769px) {
+        width: 100%;
+    }
+    @media (min-width: 1400px) {
+        padding-left: 100px;
+    }
     p{
         color: ${({theme}) => theme.color1};
         font-weight: 500;
         font-size: 1.4rem;
+        @media (min-width: 1400px){
+            font-size: 2rem;
+        }
     }
     h1{
         padding-top: 10px;
@@ -212,31 +223,29 @@ export const MainInfoIntroTheme = styled.div`
             font-size: 5rem;
             font-weight: 400;
         }
+        @media (min-width: 1400px){
+            font-size: 7rem;
+            margin-top: 0px;
+        }
     }
     h2{
         padding-top: 45px;
         color: ${({theme}) => theme.color1};
         font-size: 1.2rem;
         font-weight: 500;
+        @media (min-width: 1400px){
+            font-size: 1.4rem;
+        }
     }
 `;
 
 export const MainInfoDescTheme = styled.div`
-    /* outline: 1px solid blue; */
     width: 80vw;
     text-align: left;
-    @media (min-width: 769px){
-        width: 50%;
-        text-align: center;
+    #mainInfo-desc-desktop{
+        display: none;
     }
-    @media (min-width: 1200px){
-        height: 40%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
-    div{
+    #mainInfo-location{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -257,7 +266,7 @@ export const MainInfoDescTheme = styled.div`
             font-size: 1.8rem;
         }
     }
-    button{
+    #mainInfo-button{
         background-color: ${({theme}) => theme.color2};
         color: ${({theme}) => theme.whiteOrBlack};
         border: none;
@@ -273,6 +282,135 @@ export const MainInfoDescTheme = styled.div`
         }
         @media (min-width: 1200px) {
             width: 120px;
+        }
+    }
+    @media (min-width: 769px){
+        width: 100%;
+        height: 70%;
+        text-align: center;
+        #mainInfo-desc-mobile{
+            display: none;
+        }
+        #mainInfo-desc-desktop{
+            display: block;
+            position: relative;
+            height: 100%;
+            @media (min-width: 1200px){
+                width: 80%;
+                margin: 0px auto;
+            }
+            #MDD-button-container{
+                position: absolute;
+                :nth-of-type(1){
+                    bottom: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 3px solid ${({theme}) => theme.color2};
+                    width: 60%;
+                    height: 60%;
+                    z-index: 3;
+                    border-radius: 10px;
+                    @media (min-width: 992px){
+                        width: 55%;
+                    }
+                    @media (min-width: 1400px){
+                        width: 50%;
+                    }
+                }
+                :nth-of-type(2){
+                    top: 0;
+                    right: 0;
+                    background-color: #95BDFF;
+                    width: 60%;
+                    height: 50%;
+                    z-index: 2;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        width: 70%;
+                        @media (min-width: 992px){
+                            width: 55%;
+                        }
+                        @media (min-width: 1400px){
+                            width: 40%;
+                        }
+                    }
+                }
+                :nth-of-type(3){
+                    bottom: 0;
+                    right: 0;
+                    background-color: ${({theme}) => theme.color1};
+                    width: 33%;
+                    height: 42%;
+                    z-index: 1;
+                    border-radius: 10px;
+                    @media (min-width: 1400px){
+                        right: 50px;
+                    }
+                }
+                #MDD-button{
+                    background-color: ${({theme}) => theme.color2};
+                    color: ${({theme}) => theme.whiteOrBlack};
+                    border: none;
+                    transition: all 200ms ease-in;
+                    cursor: pointer;
+                    padding: 8px;
+                    border-radius: 5px;
+                    font-weight: 700;
+                    font-size: 1.5rem;
+                }
+            }
+            #MDD-globe-container{
+                position: absolute;
+                top: -5%;
+                left: -5%;
+                background-color: ${({theme}) => theme.globeDirt};
+                width: 128px;
+                height: 128px;
+                border-radius: 50%;
+                color: ${({theme}) => theme.globeWater};
+                svg{
+                    font-size: 8rem;
+                }
+                #MDD-globe-location{
+                    position: absolute;
+                    left: 42px;
+                    bottom: 19px;
+                    font-size: 3rem;
+                    fill: ${({theme}) => theme.color2};
+                    @media (min-width: 1400px){
+                        animation-duration: 2s;
+                        animation-iteration-count: infinite;
+                        transform-origin: bottom;
+                    }
+                }
+                @media (min-width: 992px){
+                    top: -10%;
+                    width: 159px;
+                    height: 159px;
+                    svg{
+                        font-size: 10rem;
+                    }
+                    #MDD-globe-location{
+                        left: 61px;
+                        bottom: 24px;
+                    }
+                }
+                @media (min-width: 992px){
+                    width: 192px;
+                    height: 192px;
+                    svg{
+                        font-size: 12rem;
+                    }
+                    #MDD-globe-location{
+                        left: 77px;
+                        bottom: 35px;
+                    }
+                }
+            }
         }
     }
 `;

@@ -14,7 +14,9 @@ const LightTheme = {
     mainInfo: "#1C283A",
     white: "#FFF",
     black: "#000",
-    whiteOrBlack: "#FFF"
+    whiteOrBlack: "#FFF",
+    globeWater: '#2f94cf',
+    globeDirt: '#91c91a',
 };
 
 const DarkTheme = {
@@ -33,7 +35,9 @@ const DarkTheme = {
     mainInfo: "#FFE1E1",
     white: "#FFF",
     black: "#000",
-    whiteOrBlack: "#000"
+    whiteOrBlack: "#000",
+    globeWater: '#2f94cf',
+    globeDirt: '#91c91a',
 };
 
 const Themes = {
