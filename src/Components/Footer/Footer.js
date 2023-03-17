@@ -2,11 +2,15 @@ import React from 'react';
 import {
     FooterContainerTheme
 } from '../Cover/Cover.elements';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+
+    const {t} = useTranslation();
+
     return (
         <FooterContainerTheme>
-            <h2>Diseño y desarrollo por Mateo Campillo</h2>
+            <h2>{t('Footer')}</h2>
         </FooterContainerTheme>
     )
 }

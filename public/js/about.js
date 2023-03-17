@@ -34,12 +34,6 @@ function setUtils() {
         aboutContainer.classList.add('claseAnimacionAbout')
     });
 
-    let englishButton = document.querySelector('#mainInfoIcons-button');
-
-    englishButton.addEventListener('pointerdown', function() {
-        alert('Coming soon');
-    });
-
 };
 
 document.addEventListener('load', setTimeout(setUtils, 500));

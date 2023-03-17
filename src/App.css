@@ -32,7 +32,17 @@
   animation-name: bounce;
   animation-timing-function: ease;
 }
-/* .bounce:hover {
-  animation-name: bounce;
-  animation-timing-function: ease;
-} */
+
+/* Animacion de cargando */
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(359deg);
+  }
+}
+/* Animacion de cargando */

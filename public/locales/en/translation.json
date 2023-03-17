@@ -1,0 +1,53 @@
+{
+    "Header": {
+        "sobreMi": "About me",
+        "proyectos": "Projects",
+        "contacto": "Contact"
+    },
+    "MainInfo": {
+        "intro": {
+            "jobTitle": "Web developer",
+            "taglineDesktop": "Passionate about creation, elegant designs and progress.",
+            "buttonMobile": "About me"
+        },
+        "desc": {
+            "sobreMi": "About me"
+        }
+    },
+    "About": {
+        "parrafoN1": "Hello! My name is Mateo Campillo, I'm a web developer.",
+        "parrafoN2": "Since I was little I knew that my career was going to develop electronically, and when I discovered web development I fell in love completely. I feel that it allows me to constantly grow and exploit my creativity.",
+        "parrafoN3": "Another paragraph here Another paragraph here Another paragraph here v Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here",
+        "parrafoN4": "MERN stack and some more technologies:"
+    },
+    "Proyectos": {
+        "titulo": "Projects",
+        "infoRadiant": {
+            "titulo": "InfoRadiant",
+            "desc": "With this project I decided to create a page that consumes an external API, prioritizing that the design is simple and elegant, and that the information is easy to consume. Built with React, plus other libraries for easy navigation. API consumed via Fetch."
+        },
+        "ecommerce": {
+            "titulo": "Ecommerce",
+            "desc": "Project currently in the development stage, with the aim of generating an eCommerce mockup, emphasizing interaction and design oriented towards a pleasant user experience."
+        }
+    },
+    "Contacto": {
+        "titulo": "Contact",
+        "textoLargo": {
+            "parrafoN1": "If you liked my work and you are looking for a trained professional to join your team, do not hesitate to contact me.",
+            "parrafoN2": "I am eager to discuss how my experience and skills can contribute to the success of your project or company.",
+            "parrafoN3": "Do not wait any longer to contact me and together we will achieve great things!"
+        },
+        "formulario": {
+            "titulo": "Leave me a message!",
+            "labels": {
+                "nombre": "First and last name",
+                "email": "Email",
+                "mensaje": "Message",
+                "submit": "Submit"
+            },
+            "linkedIn": "Or we can connect on Linkedin!"
+        }
+    },
+    "Footer": "Design and development by Mateo Campillo"
+}

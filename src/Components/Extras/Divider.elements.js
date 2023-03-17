@@ -40,3 +40,16 @@ export const DividerTiltStyles = styled.div`
         fill: ${({theme}) => theme.bcg2};
     }
 `;
+
+export const LoadingStyle = styled.div`
+    background-color: #FFE1E1;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    svg{
+        font-size: 4rem;
+        color: #000;
+    }
+`;

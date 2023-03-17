@@ -5,17 +5,21 @@ import {
     MainProyectoTituloH2Theme
 } from '../Cover/Cover.elements';
 import DividerCloud from '../Extras/DividerCloud';
+import { useTranslation } from 'react-i18next';
 
 function MainProyectos() {
+
+    const {t} = useTranslation();
+
     return (
         <MainProyectosContainerTheme id='Proyectos'>
             <DividerCloud />
             <div>
-                <MainProyectoTituloH2Theme>Proyectos</MainProyectoTituloH2Theme>
+                <MainProyectoTituloH2Theme>{t('Proyectos.titulo')}</MainProyectoTituloH2Theme>
             </div>
             <MainProyectosWrapperTheme>
-                <Proyecto img='/img/infoRadiant_frame.png' titulo='InfoRadiant' a='https://info-radiant.vercel.app/' desc='Con este proyecto decidí crear una página que consuma una API externa, priorizando que el diseño sea sencillo y elegante, y que la información sea fácil de consumir. Construida con React, más otras librerias para facilitar la navegación. API consumida vía Fetch.'/>
-                <Proyecto img='/img/working_frame.png' titulo='eCommerce' a='#' desc='Proyecto actualmente en etapa de desarrollo, con el objetivo de generar un mockup de un eCommerce, haciendo hincapié en la interaccion y el diseño orientado a una grata user experience.'/>
+                <Proyecto img='/img/infoRadiant_frame.png' titulo={t('Proyectos.infoRadiant.titulo')} a='https://info-radiant.vercel.app/' desc={t('Proyectos.infoRadiant.desc')}/>
+                <Proyecto img='/img/working_frame.png' titulo={t('Proyectos.ecommerce.titulo')} a='#' desc={t('Proyectos.ecommerce.desc')}/>
             </MainProyectosWrapperTheme>
         </MainProyectosContainerTheme>
     )

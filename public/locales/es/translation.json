@@ -1,0 +1,53 @@
+{
+    "Header": {
+        "sobreMi": "Sobre mí",
+        "proyectos": "Proyectos",
+        "contacto": "Contacto"
+    },
+    "MainInfo": {
+        "intro": {
+            "jobTitle": "Desarrollador Web",
+            "taglineDesktop": "Apasionado por la creación, los diseños elegantes y el progreso.",
+            "buttonMobile": "Sobre mí"
+        },
+        "desc": {
+            "sobreMi": "Sobre mí"
+        }
+    },
+    "About": {
+        "parrafoN1": "Buenas! mi nombre es Mateo Campillo, soy web developer.",
+        "parrafoN2": "Desde pequeño sabia que mi carrera se iba a desarrollar de forma electrónica, y cuando descubrí el web development me enamore por completo. Siento que me permite crecer constantemente y explotar mi creatividad.",
+        "parrafoN3": "Otro parrafo aca Otro parrafo aca Otro parrafo aca v Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca",
+        "parrafoN4": "Stack MERN y algunas tecnologías más:"
+    },
+    "Proyectos": {
+        "titulo": "Proyectos",
+        "infoRadiant": {
+            "titulo": "InfoRadiant",
+            "desc": "Con este proyecto decidí crear una página que consuma una API externa, priorizando que el diseño sea sencillo y elegante, y que la información sea fácil de consumir. Construida con React, más otras librerias para facilitar la navegación. API consumida vía Fetch."
+        },
+        "ecommerce": {
+            "titulo": "Ecommerce",
+            "desc": "Proyecto actualmente en etapa de desarrollo, con el objetivo de generar un mockup de un eCommerce, haciendo hincapié en la interaccion y el diseño orientado a una grata user experience."
+        }
+    },
+    "Contacto": {
+        "titulo": "Contacto",
+        "textoLargo": {
+            "parrafoN1": "Si te ha gustado mi trabajo y estás buscando un profesional capacitado para unirte a tu equipo, no dudes en contactarme.",
+            "parrafoN2": "Estoy ansioso por discutir cómo mi experiencia y habilidades pueden contribuir al éxito de tu proyecto o empresa.",
+            "parrafoN3": "¡No esperes más para contactarme y juntos lograremos grandes cosas!"
+        },
+        "formulario": {
+            "titulo": "Dejame un mensaje!",
+            "labels": {
+                "nombre": "Nombre y apellido",
+                "email": "Email",
+                "mensaje": "Mensaje",
+                "submit": "Enviar"
+            },
+            "linkedIn": "O podemos conectar en Linkedin!"
+        }
+    },
+    "Footer": "Diseño y desarrollo por Mateo Campillo"
+}

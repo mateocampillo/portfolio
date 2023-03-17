@@ -11,6 +11,7 @@ import {
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
 import DividerTilt from '../Extras/DividerTilt';
+import { useTranslation } from 'react-i18next';
 
 function Contacto() {
 
@@ -36,39 +37,41 @@ function Contacto() {
             });
         }
 
+    const {t} = useTranslation();
+
     return (
         <ContactoContainerTheme id='Contacto'>
             <DividerTilt />
             <ContactoWrapperTheme>
-                <h2>Contacto</h2>
+                <h2>{t('Contacto.titulo')}</h2>
                 <ContactoColumnas>
                     <ContactoColumnasPrimera>
-                        <p>Si te ha gustado mi trabajo y estás buscando un profesional capacitado para unirte a tu equipo, no dudes en contactarme.</p>
-                        <p>Estoy ansioso por discutir cómo mi experiencia y habilidades pueden contribuir al éxito de tu proyecto o empresa.</p>
-                        <p>¡No esperes más para contactarme y juntos lograremos grandes cosas!</p>
+                        <p>{t('Contacto.textoLargo.parrafoN1')}</p>
+                        <p>{t('Contacto.textoLargo.parrafoN2')}</p>
+                        <p>{t('Contacto.textoLargo.parrafoN3')}</p>
                     </ContactoColumnasPrimera>
                     <div>
-                        <h3>Dejame un mensaje!</h3>
+                        <h3>{t('Contacto.formulario.titulo')}</h3>
                         <form ref={form} onSubmit={sendEmail}>
                             <ContactoDivInsideTheme>
-                                <label>Nombre y apellido</label>
+                                <label>{t('Contacto.formulario.labels.nombre')}</label>
                                 <input type='text' name="user_name" required></input>
                             </ContactoDivInsideTheme>
                             <ContactoDivInsideTheme>
-                                <label>Email</label>
+                                <label>{t('Contacto.formulario.labels.email')}</label>
                                 <input type='email' name="user_email" required></input>
                             </ContactoDivInsideTheme>
                             <ContactoDivInsideTheme>
-                                <label>Mensaje</label>
+                                <label>{t('Contacto.formulario.labels.mensaje')}</label>
                                 <textarea rows={5} name="message" required></textarea>
                             </ContactoDivInsideTheme>
                             <ContactoDivInsideTheme>
-                                <button id='buttonSubmitContacto' type='submit' value="Send" >Enviar</button>
+                                <button id='buttonSubmitContacto' type='submit' value="Send" >{t('Contacto.formulario.labels.submit')}</button>
                             </ContactoDivInsideTheme>
                         </form>
                     </div>
                 </ContactoColumnas>
-                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>O podemos conectar en Linkedin!</ContactoH3IconoLinkedin><i className="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
+                <ContactoIconoLinkedin href="https://www.linkedin.com/in/mateocampillo/"><ContactoH3IconoLinkedin>{t('Contacto.formulario.linkedIn')}</ContactoH3IconoLinkedin><i className="devicon-linkedin-plain"></i></ContactoIconoLinkedin>
             </ContactoWrapperTheme>
         </ContactoContainerTheme>
     )
