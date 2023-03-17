@@ -18,12 +18,14 @@ function MainInfo() {
   function changeLocale () {
     if(locale === 'es') {
       i18n.changeLanguage('en');
+    } else if (locale === 'es-AR') {
+      i18n.changeLanguage('en');
     } else {
       i18n.changeLanguage('es');
     }
   }
 
-  let languageMode = locale === 'es' ? 'Ingles' : 'Español' ;
+  let languageMode = locale === 'en' ? 'Español' : 'Ingles' ;
 
     return (
       <>
