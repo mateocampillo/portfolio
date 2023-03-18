@@ -2,14 +2,17 @@ function setUtils() {
 
     let about = document.querySelector('#about-a');
     let aboutContainer = document.querySelector('#sectionAbout');
+    let body = document.querySelector('body');
 
     about.addEventListener('pointerdown', function() {
         if(aboutContainer.classList.contains('claseAnimacionAbout')){
             aboutContainer.classList.remove('claseAnimacionAbout')
             aboutContainer.classList.add('claseAnimacionAboutOut')
+            body.classList.remove('stop-scroll')
         } else {
             aboutContainer.classList.remove('claseAnimacionAboutOut')
             aboutContainer.classList.add('claseAnimacionAbout')
+            body.classList.add('stop-scroll')
         }
     });
 
