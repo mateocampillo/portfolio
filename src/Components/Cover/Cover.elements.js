@@ -519,14 +519,14 @@ export const MainProyectosContainerTheme = styled.div`
     padding-top: 70px;
     height: 780px;
     @media (min-width: 310px){
-        height: 120vh;
+        height: auto;
     }
     @media (min-width: 769px) {
         padding-top: 140px;
-        height: 70vh;
+        /* height: 80vh; */
     }
     @media (min-width: 992px) {
-        height: 80vh;
+        /* height: 80vh; */
     }
     @media (min-width: 1201px) {
         height: 90vh;
@@ -617,11 +617,11 @@ export const ContactoContainerTheme = styled.div`
     padding: 70px 0px 0px;
     height: 650px;
     @media (min-width: 310px){
-        height: 90vh;
+        padding-bottom: 40px;
+        height: auto;
     }
     @media (min-width: 769px) {
         padding: 100px 0px 0px;
-        height: 80vh;
     }
     @media (min-width: 992px) {
         padding: 100px 50px 0px;
