@@ -49,7 +49,12 @@
 
 /* stop scroll */
 .stop-scroll{
-  height: 100%;
   overflow: hidden;
 }
 /* stop scroll */
+
+/* allow scroll */
+.allow-scroll{
+  overflow-y: scroll;
+}
+/* allow scroll */

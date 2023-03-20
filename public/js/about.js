@@ -8,11 +8,13 @@ function setUtils() {
         if(aboutContainer.classList.contains('claseAnimacionAbout')){
             aboutContainer.classList.remove('claseAnimacionAbout')
             aboutContainer.classList.add('claseAnimacionAboutOut')
+            aboutContainer.classList.remove('allow-scroll')
             body.classList.remove('stop-scroll')
         } else {
             aboutContainer.classList.remove('claseAnimacionAboutOut')
             aboutContainer.classList.add('claseAnimacionAbout')
             body.classList.add('stop-scroll')
+            aboutContainer.classList.add('allow-scroll')
         }
     });
 
@@ -21,6 +23,8 @@ function setUtils() {
     crossAbout.addEventListener('pointerdown', function() {
         aboutContainer.classList.remove('claseAnimacionAbout')
         aboutContainer.classList.add('claseAnimacionAboutOut')
+        aboutContainer.classList.remove('allow-scroll')
+        body.classList.remove('stop-scroll')
     });
 
     let infoAbout = document.querySelector('#mainInfo-button');
@@ -28,6 +32,8 @@ function setUtils() {
     infoAbout.addEventListener('pointerdown', function() {
         aboutContainer.classList.remove('claseAnimacionAboutOut')
         aboutContainer.classList.add('claseAnimacionAbout')
+        aboutContainer.classList.add('allow-scroll')
+        body.classList.add('stop-scroll')
     });
 
     let infoAboutDesktop = document.querySelector('#MDD-button');
@@ -35,8 +41,10 @@ function setUtils() {
     infoAboutDesktop.addEventListener('pointerdown', function() {
         aboutContainer.classList.remove('claseAnimacionAboutOut')
         aboutContainer.classList.add('claseAnimacionAbout')
+        aboutContainer.classList.add('allow-scroll')
+        body.classList.add('stop-scroll')
     });
 
 };
 
-document.addEventListener('load', setTimeout(setUtils, 1000));
+window.addEventListener('load', () => setTimeout(setUtils, 500));
