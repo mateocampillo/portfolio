@@ -50,4 +50,4 @@ function setUtils() {
 
 };
 
-window.addEventListener('load', () => setTimeout(setUtils, 500));
+document.addEventListener('load', setTimeout(setUtils, 1000));
