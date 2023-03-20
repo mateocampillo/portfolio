@@ -21,6 +21,10 @@ export const HrTheme = styled.hr`
 // HEADER SECTION
 export const HeaderTheme = styled.header`
     padding-top: 1px;
+    height: 70px;
+    @media (min-width: 310px){
+        height: auto;
+    }
 `;
 
 export const HeaderUlTheme = styled.ul`
@@ -28,7 +32,10 @@ export const HeaderUlTheme = styled.ul`
     flex-direction: row;
     justify-content: space-around;
     margin: 20px auto 15px;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    @media (min-width: 310px){
+        font-size: 1.4rem;
+    }
     list-style-type: none;
     font-family: 'Work Sans', sans-serif;
     touch-action: none;
@@ -56,7 +63,10 @@ export const HeaderUlTheme = styled.ul`
                 color: ${({theme}) => theme.color1};
                 background: none;
                 border: none;
-                font-size: 1.4rem;
+                font-size: 1rem;
+                @media (min-width: 310px){
+                    font-size: 1.4rem;
+                }
                 cursor: pointer;
                 @media (min-width: 1201px){
                     font-size: 2rem;
@@ -91,9 +101,9 @@ export const SectionAboutTheme = styled.div`
     border-radius: 5px;
     border: 1px solid ${({theme}) => theme.whiteOrBlack};
     right: 0%;
-    max-height: 100vh;
     opacity: 0%;
     z-index: 10;
+    max-height: 100%;
     visibility: hidden;
     font-family: 'Work Sans', sans-serif;
     @media (min-width: 769px) {
@@ -172,7 +182,10 @@ export const SectionAboutStackTheme = styled.div`
 
 export const MainInfoTheme = styled.div`
     color: ${({theme}) => theme.text};
-    height: 60vh;
+    height: 470px;
+    @media (min-width: 310px){
+        height: 60vh;
+    }
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -207,7 +220,7 @@ export const MainInfoIntroTheme = styled.div`
     }
     h1{
         padding-top: 10px;
-        font-size: 3.5rem;
+        font-size: 3rem;
         font-family: 'Montserrat', sans-serif;
         font-style: italic;
         font-weight: 600;
@@ -501,10 +514,13 @@ export const SwitchModeButton = styled.button`
 
 export const MainProyectosContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 100vh;
     background-color: ${({theme}) => theme.bcg2};
     position: relative;
     padding-top: 70px;
+    height: 780px;
+    @media (min-width: 310px){
+        height: 120vh;
+    }
     @media (min-width: 769px) {
         padding-top: 140px;
         height: 70vh;
@@ -594,12 +610,15 @@ export const ProyectoWrapperTheme = styled.div`
 
 export const ContactoContainerTheme = styled.div`
     transition: all 200ms ease-in;
-    height: 70vh;
     background-color: ${({theme}) => theme.bcg1};
     width: 100%;
     margin: 0px auto;
     position: relative;
     padding: 70px 0px 0px;
+    height: 650px;
+    @media (min-width: 310px){
+        height: 90vh;
+    }
     @media (min-width: 769px) {
         padding: 100px 0px 0px;
         height: 80vh;
