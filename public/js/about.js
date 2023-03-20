@@ -15,6 +15,7 @@ function setUtils() {
             aboutContainer.classList.add('claseAnimacionAbout')
             body.classList.add('stop-scroll')
             aboutContainer.classList.add('allow-scroll')
+            aboutContainer.scrollIntoView()
         }
     });
 
@@ -34,6 +35,7 @@ function setUtils() {
         aboutContainer.classList.add('claseAnimacionAbout')
         aboutContainer.classList.add('allow-scroll')
         body.classList.add('stop-scroll')
+        aboutContainer.scrollIntoView()
     });
 
     let infoAboutDesktop = document.querySelector('#MDD-button');
@@ -43,6 +45,7 @@ function setUtils() {
         aboutContainer.classList.add('claseAnimacionAbout')
         aboutContainer.classList.add('allow-scroll')
         body.classList.add('stop-scroll')
+        aboutContainer.scrollIntoView()
     });
 
 };
