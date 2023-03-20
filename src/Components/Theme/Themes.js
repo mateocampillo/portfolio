@@ -21,7 +21,7 @@ const LightTheme = {
 
 const DarkTheme = {
     text: "#FFF",
-    bcg1: "#000",
+    bcg1: "#121212",
     bcg2: "#fff",
     bcg2Text: "#FFF",
     color1: "#64FFC7",
