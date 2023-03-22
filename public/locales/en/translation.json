@@ -7,7 +7,7 @@
     "MainInfo": {
         "intro": {
             "jobTitle": "Web developer",
-            "taglineDesktop": "Passionate about creation, elegant designs and progress.",
+            "taglineDesktop": "Passionate about creating elegant designs, learning, and progression.",
             "buttonMobile": "About me"
         },
         "desc": {
@@ -15,16 +15,17 @@
         }
     },
     "About": {
-        "parrafoN1": "Hello! My name is Mateo Campillo, I'm a web developer.",
-        "parrafoN2": "Since I was little I knew that my career was going to develop electronically, and when I discovered web development I fell in love completely. I feel that it allows me to constantly grow and exploit my creativity.",
-        "parrafoN3": "Another paragraph here Another paragraph here Another paragraph here v Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here Another paragraph here",
-        "parrafoN4": "MERN stack and some more technologies:"
+        "parrafoN1": "My name is Mateo Campillo, I'm a web developer.",
+        "parrafoN2": "Since I was little I knew that my career was going to develop electronically, and when I discovered web development, I fell in love completely. I feel it allows me to constantly grow and exploit my creativity.",
+        "parrafoN3": "I am passionate about creating innovative digital solutions. I have been working on improving my full stack skills. I am always looking forwards to learning more and staying on top of the latest trends and technologies in my field.",
+        "parrafoN4": "If you are looking for a committed developer, do not hesitate to contact me. I would love the opportunity to collaborate with you and create innovative digital solutions together.",
+        "parrafoN5": "MERN stack and some more technologies:"
     },
     "Proyectos": {
         "titulo": "Projects",
         "infoRadiant": {
             "titulo": "InfoRadiant",
-            "desc": "With this project I decided to create a page that consumes an external API, prioritizing that the design is simple and elegant, and that the information is easy to consume. Built with React, plus other libraries for easy navigation. API consumed via Fetch."
+            "desc": "With this project I decided to create a page that consumes an external API, prioritizing a simple and elegant design, and easy to consume information. Built with React, plus other libraries for easy navigation. API consumed via Fetch."
         },
         "ecommerce": {
             "titulo": "Ecommerce",

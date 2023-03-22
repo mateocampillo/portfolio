@@ -15,10 +15,11 @@
         }
     },
     "About": {
-        "parrafoN1": "Buenas! mi nombre es Mateo Campillo, soy web developer.",
-        "parrafoN2": "Desde pequeño sabia que mi carrera se iba a desarrollar de forma electrónica, y cuando descubrí el web development me enamore por completo. Siento que me permite crecer constantemente y explotar mi creatividad.",
-        "parrafoN3": "Otro parrafo aca Otro parrafo aca Otro parrafo aca v Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca Otro parrafo aca",
-        "parrafoN4": "Stack MERN y algunas tecnologías más:"
+        "parrafoN1": "Mi nombre es Mateo Campillo, Web Developer.",
+        "parrafoN2": "Desde pequeño sabia que mi carrera se iba a desarrollar de forma electrónica, y cuando descubrí el web development, me enamore por completo. Siento que me permite crecer constantemente y explotar mi creatividad.",
+        "parrafoN3": "Soy apasionado por la creación de soluciones digitales innovadoras. He estado trabajando en mejorar mis habilidades en el área de desarrollo full stack. Siempre estoy buscando aprender más y estar al tanto de las últimas tendencias y tecnologías en mi campo.",
+        "parrafoN4": "Si buscas un desarrollador comprometido no dudes en contactarme. Me encantaría tener la oportunidad de colaborar contigo y crear soluciones digitales innovadoras juntos.",
+        "parrafoN5": "Stack MERN y algunas tecnologías más:"
     },
     "Proyectos": {
         "titulo": "Proyectos",

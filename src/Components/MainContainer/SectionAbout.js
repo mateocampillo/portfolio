@@ -20,8 +20,8 @@ function SectionAbout() {
           <div><p>{t('About.parrafoN1')}</p></div>
           <div><p>{t('About.parrafoN2')}</p></div>
           <div><p>{t('About.parrafoN3')}</p></div>
-          <div><p>{t('About.parrafoN3')}</p></div>
           <div><p>{t('About.parrafoN4')}</p></div>
+          <div><p>{t('About.parrafoN5')}</p></div>
           <SectionAboutStackTheme id='aboutTechStack'>
             <i className="devicon-react-original colored"></i>
             <i className="devicon-nodejs-plain colored"></i>
