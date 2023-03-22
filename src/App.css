@@ -61,4 +61,9 @@ html{
 .allow-scroll{
   overflow-y: scroll;
 }
+@media(min-width: 1400px){
+  .allow-scroll{
+    overflow-y: auto;
+  }
+}
 /* allow scroll */
