@@ -16,9 +16,7 @@ function MainInfo() {
   const {t} = useTranslation();
   const {locale} = useContext(LocaleContext);
   function changeLocale () {
-    if(locale === 'es') {
-      i18n.changeLanguage('en');
-    } else if (locale === 'es-AR') {
+    if (locale.includes('es')) {
       i18n.changeLanguage('en');
     } else {
       i18n.changeLanguage('es');
