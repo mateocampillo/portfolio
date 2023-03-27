@@ -29,7 +29,7 @@
         },
         "ecommerce": {
             "titulo": "Ecommerce",
-            "desc": "Proyecto actualmente en etapa de desarrollo, con el objetivo de generar un mockup de un eCommerce, haciendo hincapié en la interaccion y el diseño orientado a una grata user experience."
+            "desc": "Proyecto actualmente en etapa de desarrollo, con el objetivo de generar un mockup de un eCommerce, utilizando Next.js y Typescript para su desarrollo."
         }
     },
     "Contacto": {

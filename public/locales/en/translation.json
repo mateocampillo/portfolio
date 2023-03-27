@@ -29,7 +29,7 @@
         },
         "ecommerce": {
             "titulo": "Ecommerce",
-            "desc": "Project currently in the development stage, with the aim of generating an eCommerce mockup, emphasizing interaction and design oriented towards a pleasant user experience."
+            "desc": "Project currently in the development stage, with the aim of generating an eCommerce mockup, using Next.js and Typescript for it´s development."
         }
     },
     "Contacto": {
