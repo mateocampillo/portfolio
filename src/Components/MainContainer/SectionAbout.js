@@ -26,6 +26,8 @@ function SectionAbout() {
             <i className="devicon-react-original colored"></i>
             <i className="devicon-nodejs-plain colored"></i>
             <i className="devicon-express-original colored"></i>
+            <i className="devicon-nextjs-plain-wordmark"></i>
+            <i className="devicon-typescript-plain"></i>
             <i className="devicon-javascript-plain colored"></i>
             <i className="devicon-mysql-plain colored"></i>
             <i className="devicon-bootstrap-plain colored"></i>
